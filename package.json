@@ -1,0 +1,22 @@
+{
+  "name": "apwj",
+  "version": "1.0.0",
+  "description": "报修系统项目",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coverageReporters": ["text", "html"]
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "memory-cache": "^0.2.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

@@ -1,0 +1,125 @@
+
+<view class="container">
+  <!-- 地图缩略图 -->
+  <view class="map-container" wx:if="{{markers.length > 0}}">
+    <map 
+      id="map"
+      longitude="{{markers[0].longitude}}" 
+      latitude="{{markers[0].latitude}}"
+      scale="15"
+      markers="{{markers}}"
+      style="width: 100%; height: 180px;"
+    ></map>
+  </view>
+
+  <!-- 订单基本信息 -->
+  <view class="card">
+    <view class="card-title">订单信息</view>
+    <view class="info-item">
+      <text class="info-label">联系电话：</text>
+      <text class="info-value">{{order.phone}}</text>
+    </view>
+    <view class="info-item">
+      <text class="info-label">服务地点：</text>
+      <text class="info-value">{{order.locationName || '无数据'}}</text>
+    </view>
+    <view class="info-item">
+      <text class="info-label">详细地址：</text>
+      <text class="info-value">
+        {{order.displayAddress || ''}}
+        <text wx:if="{{order.displayAddress && order.detailAddress}}"> - </text>
+        {{order.detailAddress || ''}}
+      </text>
+    </view>
+    <view class="info-item" wx:if="{{order.problem}}">
+      <text class="info-label">问题描述：</text>
+      <text class="info-value">{{order.problem}}</text>
+    </view>
+  </view>
+
+  <!-- 位置地图已移至顶部 -->
+
+  <!-- 订单状态卡片 -->
+  <view class="card status-card">
+    <view class="status-content">
+      <text class="status-label">订单状态：</text>
+      <text class="status-badge status-{{order.status}}">
+        {{order.statusText || (order.status === 0 ? '待处理' : order.status === 1 ? '处理中' : '已完成')}}
+      </text>
+    </view>
+    <view class="status-time">
+      <text>创建时间：{{order.createTime || '无数据'}}</text>
+    </view>
+  </view>
+
+  <!-- 媒体预览 -->
+  <view class="card media-card" wx:if="{{order.mediaList && order.mediaList.length > 0}}">
+    <view class="card-title">问题附件</view>
+    <scroll-view scroll-x class="media-scroll">
+      <view class="media-container">
+        <block wx:for="{{order.mediaList}}" wx:key="url">
+          <view class="media-wrapper">
+            <image 
+              wx:if="{{item.type === 'image' || !item.type}}" 
+              src="{{item.url}}" 
+              mode="aspectFill" 
+              class="media-item"
+              bindtap="previewMedia"
+              data-index="{{index}}"
+            />
+            <video 
+              wx:else 
+              src="{{item.url}}" 
+              controls 
+              class="media-item"
+            ></video>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="card" wx:else>
+    <view class="no-data">该订单暂无附件</view>
+  </view>
+
+  <!-- 调试信息 -->
+  <view class="debug-info" wx:if="{{false}}"> <!-- 调试用，正式环境设为false -->
+    <text>isAdmin: {{isAdmin}}</text>
+    <text>order.status: {{order.status}}</text>
+  </view>
+
+  <!-- 操作按钮 -->
+  <view class="action-btn-container fixed-btn-container">
+    <!-- 待接单状态按钮 -->
+    <view class="action-btn-group" wx:if="{{order.status === 0}}">
+      <view 
+        class="action-btn accept-btn" 
+        wx:if="{{isAdmin}}"
+        bindtap="acceptOrder"
+      >
+        接单
+      </view>
+      <view class="action-btn cancel-btn" bindtap="cancelOrder">
+        取消订单
+      </view>
+    </view>
+    
+    <!-- 进行中状态按钮 -->
+    <view class="action-btn-group" wx:if="{{order.status === 1}}">
+      <view 
+        class="action-btn complete-btn" 
+        wx:if="{{!isAdmin}}"
+        bindtap="completeOrder"
+      >
+        已完成
+      </view>
+      <view 
+        class="action-btn notify-btn" 
+        wx:if="{{isAdmin}}"
+        bindtap="notifyComplete"
+      >
+        维修完成
+      </view>
+    </view>
+  </view>
+</view>

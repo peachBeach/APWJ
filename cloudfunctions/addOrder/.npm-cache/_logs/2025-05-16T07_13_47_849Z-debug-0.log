@@ -1,0 +1,37 @@
+0 verbose cli D:\nodejs\node.exe D:\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.0
+2 info using node@v22.11.0
+3 silly config load:file:D:\nodejs\node_modules\npm\npmrc
+4 silly config load:file:E:\apwj\cloudfunctions\addOrder\.npmrc
+5 silly config load:file:C:\Users\36402\.npmrc
+6 silly config load:file:D:\nodejs\node_global\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install"
+9 verbose logfile logs-max:10 dir:E:\apwj\cloudfunctions\addOrder\.npm-cache\_logs\2025-05-16T07_13_47_849Z-
+10 verbose logfile E:\apwj\cloudfunctions\addOrder\.npm-cache\_logs\2025-05-16T07_13_47_849Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 verbose stack JSONParseError: Expected ',' or '}' after property value in JSON at position 338 (line 18 column 2) while parsing near "...st\": \"^27.6.0\"\n  }\n}"
+13 verbose stack     at D:\nodejs\node_modules\npm\node_modules\read-package-json-fast\lib\index.js:7:61
+13 verbose stack     at async #initTree (D:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:268:21)
+13 verbose stack     at async Arborist.buildIdealTree (D:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:178:7)
+13 verbose stack     at async Promise.all (index 1)
+13 verbose stack     at async Arborist.reify (D:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\reify.js:131:5)
+13 verbose stack     at async Install.exec (D:\nodejs\node_modules\npm\lib\commands\install.js:150:5)
+13 verbose stack     at async Npm.exec (D:\nodejs\node_modules\npm\lib\npm.js:207:9)
+13 verbose stack     at async module.exports (D:\nodejs\node_modules\npm\lib\cli\entry.js:74:5)
+14 error code EJSONPARSE
+15 error path E:\apwj\cloudfunctions\addOrder/package.json
+16 error JSON.parse Expected ',' or '}' after property value in JSON at position 338 (line 18 column 2) while parsing near "...st\": \"^27.6.0\"\n  }\n}"
+17 error JSON.parse Failed to parse JSON data.
+17 error JSON.parse Note: package.json must be actual JSON, not just JavaScript.
+18 silly unfinished npm timer reify 1747379628847
+19 silly unfinished npm timer reify:loadTrees 1747379628848
+20 silly unfinished npm timer idealTree:init 1747379628849
+21 verbose cwd E:\apwj\cloudfunctions\addOrder
+22 verbose os Windows_NT 10.0.26100
+23 verbose node v22.11.0
+24 verbose npm  v10.9.0
+25 verbose exit 1
+26 verbose code 1
+27 error A complete log of this run can be found in: E:\apwj\cloudfunctions\addOrder\.npm-cache\_logs\2025-05-16T07_13_47_849Z-debug-0.log

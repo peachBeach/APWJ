@@ -1,0 +1,7 @@
+{
+  "envId": "your-env-id",
+  "apiToken": {
+    "workaround": true,
+    "tempToken": "temp_" + Date.now()
+  }
+}

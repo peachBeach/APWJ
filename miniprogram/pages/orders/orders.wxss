@@ -1,0 +1,35 @@
+/* 订单状态样式 - 与详情页保持一致 */
+.status-0 {
+  color: #FF9500;
+}
+.status-1 {
+  color: #1989fa;
+}
+.status-2 {
+  color: #07C160;
+}
+.status-3 {
+  color: #f5222d;
+}
+
+/* 状态徽章样式 */
+.status-badge {
+  padding: 6rpx 20rpx;
+  border-radius: 20rpx;
+  font-size: 26rpx;
+  color: white;
+  margin-left: 15rpx;
+}
+
+.status-0 .status-badge {
+  background: #FF9500;
+}
+.status-1 .status-badge {
+  background: #1989fa;
+}
+.status-2 .status-badge {
+  background: #07C160;
+}
+.status-3 .status-badge {
+  background: #f5222d;
+}

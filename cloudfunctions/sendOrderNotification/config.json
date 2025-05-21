@@ -1,0 +1,11 @@
+{
+  "env": "production-env-12345",
+  "permission": {
+    "openapi": [
+      "subscribeMessage.send"
+    ]
+  },
+  "envVariables": {
+    "WX_CLOUD_API_TOKEN": "从已有项目获取的Token值"
+  }
+}

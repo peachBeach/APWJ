@@ -1,0 +1,31 @@
+0 verbose cli D:\nodejs\node.exe D:\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.0
+2 info using node@v22.11.0
+3 silly config load:file:D:\nodejs\node_modules\npm\npmrc
+4 silly config load:file:E:\apwj\miniprogram\.npmrc
+5 silly config load:file:C:\Users\36402\.npmrc
+6 silly config load:file:D:\nodejs\node_global\etc\npmrc
+7 verbose title npm test
+8 verbose argv "test"
+9 verbose logfile logs-max:10 dir:E:\apwj\miniprogram\.npm-cache\_logs\2025-05-12T11_43_31_870Z-
+10 verbose logfile E:\apwj\miniprogram\.npm-cache\_logs\2025-05-12T11_43_31_870Z-debug-0.log
+11 silly logfile done cleaning log files
+12 verbose stack Error: Missing script: "test"
+12 verbose stack
+12 verbose stack To see a list of scripts, run:
+12 verbose stack   npm run
+12 verbose stack     at #run (D:\nodejs\node_modules\npm\lib\commands\run-script.js:111:13)
+12 verbose stack     at async RunScript.exec (D:\nodejs\node_modules\npm\lib\commands\run-script.js:40:7)
+12 verbose stack     at async Npm.exec (D:\nodejs\node_modules\npm\lib\npm.js:207:9)
+12 verbose stack     at async module.exports (D:\nodejs\node_modules\npm\lib\cli\entry.js:74:5)
+13 error Missing script: "test"
+13 error
+13 error To see a list of scripts, run:
+13 error   npm run
+14 verbose cwd E:\apwj\miniprogram
+15 verbose os Windows_NT 10.0.26100
+16 verbose node v22.11.0
+17 verbose npm  v10.9.0
+18 verbose exit 1
+19 verbose code 1
+20 error A complete log of this run can be found in: E:\apwj\miniprogram\.npm-cache\_logs\2025-05-12T11_43_31_870Z-debug-0.log

@@ -1,0 +1,36 @@
+0 verbose cli D:\nodejs\node.exe D:\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.0
+2 info using node@v22.11.0
+3 silly config load:file:D:\nodejs\node_modules\npm\npmrc
+4 silly config load:file:E:\apwj\.npmrc
+5 silly config load:file:C:\Users\36402\.npmrc
+6 silly config load:file:D:\nodejs\node_global\etc\npmrc
+7 verbose title npm test
+8 verbose argv "test"
+9 verbose logfile logs-max:10 dir:E:\apwj\.npm-cache\_logs\2025-05-20T01_41_15_374Z-
+10 verbose logfile E:\apwj\.npm-cache\_logs\2025-05-20T01_41_15_374Z-debug-0.log
+11 silly logfile done cleaning log files
+12 verbose stack Error: Could not read package.json: Error: ENOENT: no such file or directory, open 'E:\apwj\package.json'
+12 verbose stack     at async open (node:internal/fs/promises:638:25)
+12 verbose stack     at async readFile (node:internal/fs/promises:1238:14)
+12 verbose stack     at async read (D:\nodejs\node_modules\npm\node_modules\@npmcli\package-json\lib\read-package.js:9:18)
+12 verbose stack     at async PackageJson.load (D:\nodejs\node_modules\npm\node_modules\@npmcli\package-json\lib\index.js:130:31)
+12 verbose stack     at async PackageJson.normalize (D:\nodejs\node_modules\npm\node_modules\@npmcli\package-json\lib\index.js:116:5)
+12 verbose stack     at async #run (D:\nodejs\node_modules\npm\lib\commands\run-script.js:86:13)
+12 verbose stack     at async RunScript.exec (D:\nodejs\node_modules\npm\lib\commands\run-script.js:40:7)
+12 verbose stack     at async Npm.exec (D:\nodejs\node_modules\npm\lib\npm.js:207:9)
+12 verbose stack     at async module.exports (D:\nodejs\node_modules\npm\lib\cli\entry.js:74:5)
+13 error code ENOENT
+14 error syscall open
+15 error path E:\apwj\package.json
+16 error errno -4058
+17 error enoent Could not read package.json: Error: ENOENT: no such file or directory, open 'E:\apwj\package.json'
+18 error enoent This is related to npm not being able to find a file.
+18 error enoent
+19 verbose cwd E:\apwj
+20 verbose os Windows_NT 10.0.26100
+21 verbose node v22.11.0
+22 verbose npm  v10.9.0
+23 verbose exit -4058
+24 verbose code -4058
+25 error A complete log of this run can be found in: E:\apwj\.npm-cache\_logs\2025-05-20T01_41_15_374Z-debug-0.log

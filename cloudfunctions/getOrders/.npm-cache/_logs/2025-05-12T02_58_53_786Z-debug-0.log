@@ -1,0 +1,40 @@
+0 verbose cli D:\nodejs\node.exe D:\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.0
+2 info using node@v22.11.0
+3 silly config load:file:D:\nodejs\node_modules\npm\npmrc
+4 warn config production Use `--omit=dev` instead.
+5 silly config load:file:E:\apwj\cloudfunctions\getOrders\.npmrc
+6 silly config load:file:C:\Users\36402\.npmrc
+7 silly config load:file:D:\nodejs\node_global\etc\npmrc
+8 verbose title npm install
+9 verbose argv "install" "--production"
+10 verbose logfile logs-max:10 dir:E:\apwj\cloudfunctions\getOrders\.npm-cache\_logs\2025-05-12T02_58_53_786Z-
+11 verbose logfile E:\apwj\cloudfunctions\getOrders\.npm-cache\_logs\2025-05-12T02_58_53_786Z-debug-0.log
+12 silly logfile done cleaning log files
+13 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+14 silly idealTree buildDeps
+15 silly reify moves {}
+16 verbose stack Error: Could not read package.json: Error: ENOENT: no such file or directory, open 'E:\apwj\cloudfunctions\getOrders\package.json'
+16 verbose stack     at async open (node:internal/fs/promises:638:25)
+16 verbose stack     at async readFile (node:internal/fs/promises:1238:14)
+16 verbose stack     at async read (D:\nodejs\node_modules\npm\node_modules\@npmcli\package-json\lib\read-package.js:9:18)
+16 verbose stack     at async PackageJson.load (D:\nodejs\node_modules\npm\node_modules\@npmcli\package-json\lib\index.js:130:31)
+16 verbose stack     at async PackageJson.normalize (D:\nodejs\node_modules\npm\node_modules\@npmcli\package-json\lib\index.js:116:5)
+16 verbose stack     at async runScript (D:\nodejs\node_modules\npm\node_modules\@npmcli\run-script\lib\run-script.js:11:28)
+16 verbose stack     at async Install.exec (D:\nodejs\node_modules\npm\lib\commands\install.js:163:9)
+16 verbose stack     at async Npm.exec (D:\nodejs\node_modules\npm\lib\npm.js:207:9)
+16 verbose stack     at async module.exports (D:\nodejs\node_modules\npm\lib\cli\entry.js:74:5)
+17 error code ENOENT
+18 error syscall open
+19 error path E:\apwj\cloudfunctions\getOrders\package.json
+20 error errno -4058
+21 error enoent Could not read package.json: Error: ENOENT: no such file or directory, open 'E:\apwj\cloudfunctions\getOrders\package.json'
+22 error enoent This is related to npm not being able to find a file.
+22 error enoent
+23 verbose cwd E:\apwj\cloudfunctions\getOrders
+24 verbose os Windows_NT 10.0.26100
+25 verbose node v22.11.0
+26 verbose npm  v10.9.0
+27 verbose exit -4058
+28 verbose code -4058
+29 error A complete log of this run can be found in: E:\apwj\cloudfunctions\getOrders\.npm-cache\_logs\2025-05-12T02_58_53_786Z-debug-0.log

@@ -1,0 +1,55 @@
+
+<view class="container">
+  <!-- 日期筛选（始终固定显示） -->
+  <view class="date-filter">
+    <view class="date-picker-container">
+      <picker mode="date" fields="day" start="2020-01-01" end="{{today}}" bindchange="handleStartDateChange">
+        <view class="date-picker">
+          <icon type="calendar" size="12"></icon>
+          <text>{{startDate || '起始日期'}}</text>
+        </view>
+      </picker>
+      <text class="date-separator">-</text>
+      <picker mode="date" fields="day" start="2020-01-01" end="{{today}}" bindchange="handleEndDateChange">
+        <view class="date-picker">
+          <icon type="calendar" size="12"></icon>
+          <text>{{endDate || '结束日期'}}</text>
+        </view>
+      </picker>
+    </view>
+    <button class="confirm-btn" bindtap="confirmDateFilter">查询</button>
+  </view>
+
+  <!-- 订单状态标签 -->
+  <view class="order-tabs">
+    <view 
+      wx:for="{{orderStatus}}" 
+      wx:key="type" 
+      class="tab-item {{item.selected ? 'selected' : ''}}"
+      bindtap="switchOrderType"
+      data-type="{{item.type}}"
+    >
+      <image src="/images/{{item.name}}.png"></image>
+      <text>{{item.name}}</text>
+      <view class="badge" wx:if="{{item.count > 0 && item.type !== 2 && item.type !== 3}}">{{item.count}}</view>
+    </view>
+  </view>
+
+  <!-- 订单列表 -->
+  <view class="order-list">
+    <view wx:for="{{orders}}" wx:key="_id" class="order-item {{item.statusClass}}" style="--status-color: {{['#1989fa','#67c23a','#909399'][item.status]}}" bindtap="navigateToOrderDetail" data-id="{{item._id}}" data-status="{{item.status}}">
+  <view class="order-header">
+    <text>服务地点: {{item.locationName || '未指定'}}</text>
+    <view class="new-badge" wx:if="{{item.isNew}}"></view>
+  </view>
+  <view class="order-content">
+    <text>状态: {{['待接单','进行中','已完成','已取消'][item.status]}}</text>
+    <text>创建时间: {{item.createTime}}</text>
+  </view>
+</view>
+    <view wx:if="{{orders.length === 0}}" class="empty-tip">
+      <text>暂无订单数据</text>
+    </view>
+  </view>
+  
+</view>

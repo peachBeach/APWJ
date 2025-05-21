@@ -1,0 +1,69 @@
+0 verbose cli D:\nodejs\node.exe D:\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.0
+2 info using node@v22.11.0
+3 silly config load:file:D:\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\36402\.npmrc
+5 silly config load:file:D:\nodejs\node_global\etc\npmrc
+6 verbose title npm install git
+7 verbose argv "install" "--global" "git"
+8 verbose logfile logs-max:10 dir:E:\apwj\.npm-cache\_logs\2025-05-20T08_14_32_779Z-
+9 verbose logfile E:\apwj\.npm-cache\_logs\2025-05-20T08_14_32_779Z-debug-0.log
+10 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+11 silly logfile start cleaning logs, removing 1 files
+12 silly idealTree buildDeps
+13 silly fetch manifest git@*
+14 silly packumentCache full:https://registry.npmmirror.com/git cache-miss
+15 silly logfile done cleaning log files
+16 http fetch GET 200 https://registry.npmmirror.com/git 384ms (cache miss)
+17 silly packumentCache full:https://registry.npmmirror.com/git set size:2165 disposed:false
+18 silly placeDep ROOT git@0.1.5 OK for:  want: *
+19 silly fetch manifest mime@1.2.9
+20 silly packumentCache full:https://registry.npmmirror.com/mime cache-miss
+21 http fetch GET 200 https://registry.npmmirror.com/mime 50ms (cache revalidated)
+22 silly packumentCache full:https://registry.npmmirror.com/mime set size:105201 disposed:false
+23 silly placeDep node_modules/git mime@1.2.9 OK for: git@0.1.5 want: 1.2.9
+24 silly reify moves {}
+25 verbose stack Error: EPERM: operation not permitted, mkdir 'D:\nodejs\node_global\node_modules'
+25 verbose stack     at async mkdir (node:internal/fs/promises:857:10)
+25 verbose stack     at async D:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\reify.js:624:20
+25 verbose stack     at async Promise.allSettled (index 0)
+25 verbose stack     at async [reifyPackages] (D:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\reify.js:325:11)
+25 verbose stack     at async Arborist.reify (D:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\reify.js:142:5)
+25 verbose stack     at async Install.exec (D:\nodejs\node_modules\npm\lib\commands\install.js:150:5)
+25 verbose stack     at async Npm.exec (D:\nodejs\node_modules\npm\lib\npm.js:207:9)
+25 verbose stack     at async module.exports (D:\nodejs\node_modules\npm\lib\cli\entry.js:74:5)
+26 error code EPERM
+27 error syscall mkdir
+28 error path D:\nodejs\node_global\node_modules
+29 error errno -4048
+30 error Error: EPERM: operation not permitted, mkdir 'D:\nodejs\node_global\node_modules'
+30 error     at async mkdir (node:internal/fs/promises:857:10)
+30 error     at async D:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\reify.js:624:20
+30 error     at async Promise.allSettled (index 0)
+30 error     at async [reifyPackages] (D:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\reify.js:325:11)
+30 error     at async Arborist.reify (D:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\reify.js:142:5)
+30 error     at async Install.exec (D:\nodejs\node_modules\npm\lib\commands\install.js:150:5)
+30 error     at async Npm.exec (D:\nodejs\node_modules\npm\lib\npm.js:207:9)
+30 error     at async module.exports (D:\nodejs\node_modules\npm\lib\cli\entry.js:74:5) {
+30 error   errno: -4048,
+30 error   code: 'EPERM',
+30 error   syscall: 'mkdir',
+30 error   path: 'D:\\nodejs\\node_global\\node_modules'
+30 error }
+31 error
+31 error The operation was rejected by your operating system.
+31 error It's possible that the file was already in use (by a text editor or antivirus),
+31 error or that you lack permissions to access it.
+31 error
+31 error If you believe this might be a permissions issue, please double-check the
+31 error permissions of the file and its containing directories, or try running
+31 error the command again as root/Administrator.
+32 silly unfinished npm timer reify 1747728875431
+33 silly unfinished npm timer reify:createSparse 1747728875968
+34 verbose cwd E:\apwj
+35 verbose os Windows_NT 10.0.26100
+36 verbose node v22.11.0
+37 verbose npm  v10.9.0
+38 verbose exit -4048
+39 verbose code -4048
+40 error A complete log of this run can be found in: E:\apwj\.npm-cache\_logs\2025-05-20T08_14_32_779Z-debug-0.log

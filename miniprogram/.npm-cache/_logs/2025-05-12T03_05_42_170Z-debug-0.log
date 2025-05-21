@@ -1,0 +1,395 @@
+0 verbose cli D:\nodejs\node.exe D:\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.0
+2 info using node@v22.11.0
+3 silly config load:file:D:\nodejs\node_modules\npm\npmrc
+4 silly config load:file:E:\apwj\miniprogram\.npmrc
+5 silly config load:file:C:\Users\36402\.npmrc
+6 silly config load:file:D:\nodejs\node_global\etc\npmrc
+7 verbose title npm install through2
+8 verbose argv "install" "through2"
+9 verbose logfile logs-max:10 dir:E:\apwj\miniprogram\.npm-cache\_logs\2025-05-12T03_05_42_170Z-
+10 verbose logfile E:\apwj\miniprogram\.npm-cache\_logs\2025-05-12T03_05_42_170Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly idealTree buildDeps
+14 silly fetch manifest through2@*
+15 silly packumentCache full:https://registry.npmmirror.com/through2 cache-miss
+16 http fetch GET 200 https://registry.npmmirror.com/through2 170ms (cache hit)
+17 silly packumentCache full:https://registry.npmmirror.com/through2 set size:63112 disposed:false
+18 silly placeDep ROOT through2@4.0.2 REPLACE for: miniprogram@1.0.0 want: *
+19 silly fetch manifest readable-stream@3
+20 silly packumentCache full:https://registry.npmmirror.com/readable-stream cache-miss
+21 http fetch GET 200 https://registry.npmmirror.com/readable-stream 16ms (cache hit)
+22 silly packumentCache full:https://registry.npmmirror.com/readable-stream set size:231868 disposed:false
+23 silly fetch manifest through2@^2.0.3
+24 silly packumentCache full:https://registry.npmmirror.com/through2 cache-hit
+25 silly placeDep node_modules/fs-mkdirp-stream through2@2.0.5 OK for: fs-mkdirp-stream@1.0.0 want: ^2.0.3
+26 silly placeDep node_modules/remove-bom-stream through2@2.0.5 OK for: remove-bom-stream@1.2.0 want: ^2.0.3
+27 silly placeDep node_modules/through2 readable-stream@3.6.2 OK for: through2@4.0.2 want: 3
+28 silly fetch manifest through2@~2.0.0
+29 silly packumentCache full:https://registry.npmmirror.com/through2 cache-hit
+30 silly placeDep node_modules/through2-filter through2@2.0.5 OK for: through2-filter@3.0.0 want: ~2.0.0
+31 silly placeDep node_modules/to-through through2@2.0.5 OK for: to-through@2.0.0 want: ^2.0.3
+32 silly fetch manifest through2@^2.0.0
+33 silly packumentCache full:https://registry.npmmirror.com/through2 cache-hit
+34 silly placeDep node_modules/vinyl-fs through2@2.0.5 OK for: vinyl-fs@3.0.3 want: ^2.0.0
+35 silly reify mark retired [ 'E:\\apwj\\miniprogram\\node_modules\\through2' ]
+36 silly reify moves {
+36 silly reify   'E:\\apwj\\miniprogram\\node_modules\\through2': 'E:\\apwj\\miniprogram\\node_modules\\.through2-lJWej3Cx'
+36 silly reify }
+37 silly audit bulk request {
+37 silly audit   'ansi-colors': [ '1.1.0' ],
+37 silly audit   'ansi-gray': [ '0.1.1' ],
+37 silly audit   'ansi-regex': [ '2.1.1' ],
+37 silly audit   'ansi-wrap': [ '0.1.0' ],
+37 silly audit   anymatch: [ '2.0.0' ],
+37 silly audit   'normalize-path': [ '2.1.1', '3.0.0' ],
+37 silly audit   'append-buffer': [ '1.0.2' ],
+37 silly audit   archy: [ '1.0.0' ],
+37 silly audit   'arr-diff': [ '4.0.0' ],
+37 silly audit   'arr-filter': [ '1.1.2' ],
+37 silly audit   'arr-flatten': [ '1.1.0' ],
+37 silly audit   'arr-map': [ '2.0.2' ],
+37 silly audit   'arr-union': [ '3.1.0' ],
+37 silly audit   'array-each': [ '1.0.1' ],
+37 silly audit   'array-initial': [ '1.1.0' ],
+37 silly audit   'is-number': [ '4.0.0', '3.0.0' ],
+37 silly audit   'array-last': [ '1.3.0' ],
+37 silly audit   'array-slice': [ '1.1.0' ],
+37 silly audit   'array-sort': [ '1.0.0' ],
+37 silly audit   'array-unique': [ '0.3.2' ],
+37 silly audit   'assign-symbols': [ '1.0.0' ],
+37 silly audit   'async-done': [ '1.3.2' ],
+37 silly audit   'async-each': [ '1.0.6' ],
+37 silly audit   'async-settle': [ '1.0.0' ],
+37 silly audit   atob: [ '2.1.2' ],
+37 silly audit   bach: [ '1.2.0' ],
+37 silly audit   'balanced-match': [ '1.0.2' ],
+37 silly audit   base: [ '0.11.2' ],
+37 silly audit   'define-property': [ '1.0.0', '0.2.5', '2.0.2' ],
+37 silly audit   'binary-extensions': [ '1.13.1' ],
+37 silly audit   bindings: [ '1.5.0' ],
+37 silly audit   'brace-expansion': [ '1.1.11' ],
+37 silly audit   braces: [ '2.3.2' ],
+37 silly audit   'buffer-equal': [ '1.0.1' ],
+37 silly audit   'buffer-from': [ '1.1.2' ],
+37 silly audit   'cache-base': [ '1.0.1' ],
+37 silly audit   'call-bind': [ '1.0.8' ],
+37 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+37 silly audit   'call-bound': [ '1.0.4' ],
+37 silly audit   camelcase: [ '3.0.0' ],
+37 silly audit   chokidar: [ '2.1.8' ],
+37 silly audit   'class-utils': [ '0.3.6' ],
+37 silly audit   'is-descriptor': [ '0.1.7', '1.0.3' ],
+37 silly audit   cliui: [ '3.2.0' ],
+37 silly audit   clone: [ '2.1.2' ],
+37 silly audit   'clone-buffer': [ '1.0.0' ],
+37 silly audit   'clone-stats': [ '1.0.0' ],
+37 silly audit   'cloneable-readable': [ '1.1.3' ],
+37 silly audit   'code-point-at': [ '1.1.0' ],
+37 silly audit   'collection-map': [ '1.0.0' ],
+37 silly audit   'collection-visit': [ '1.0.0' ],
+37 silly audit   'color-support': [ '1.1.3' ],
+37 silly audit   'component-emitter': [ '1.3.1' ],
+37 silly audit   'concat-map': [ '0.0.1' ],
+37 silly audit   'concat-stream': [ '1.6.2' ],
+37 silly audit   'convert-source-map': [ '1.9.0' ],
+37 silly audit   'copy-descriptor': [ '0.1.1' ],
+37 silly audit   'copy-props': [ '2.0.5' ],
+37 silly audit   'core-util-is': [ '1.0.3' ],
+37 silly audit   d: [ '1.0.2' ],
+37 silly audit   debug: [ '2.6.9' ],
+37 silly audit   decamelize: [ '1.2.0' ],
+37 silly audit   'decode-uri-component': [ '0.2.2' ],
+37 silly audit   'default-compare': [ '1.0.0' ],
+37 silly audit   'default-resolution': [ '2.0.0' ],
+37 silly audit   'define-data-property': [ '1.1.4' ],
+37 silly audit   'define-properties': [ '1.2.1' ],
+37 silly audit   'detect-file': [ '1.0.0' ],
+37 silly audit   'dunder-proto': [ '1.0.1' ],
+37 silly audit   duplexify: [ '3.7.1' ],
+37 silly audit   'each-props': [ '1.3.2' ],
+37 silly audit   'is-plain-object': [ '2.0.4', '5.0.0' ],
+37 silly audit   'end-of-stream': [ '1.4.4' ],
+37 silly audit   'error-ex': [ '1.3.2' ],
+37 silly audit   'es-define-property': [ '1.0.1' ],
+37 silly audit   'es-errors': [ '1.3.0' ],
+37 silly audit   'es-object-atoms': [ '1.1.1' ],
+37 silly audit   'es5-ext': [ '0.10.64' ],
+37 silly audit   'es6-iterator': [ '2.0.3' ],
+37 silly audit   'es6-symbol': [ '3.1.4' ],
+37 silly audit   'es6-weak-map': [ '2.0.3' ],
+37 silly audit   esniff: [ '2.0.1' ],
+37 silly audit   'event-emitter': [ '0.3.5' ],
+37 silly audit   'expand-brackets': [ '2.1.4' ],
+37 silly audit   'expand-tilde': [ '2.0.2' ],
+37 silly audit   ext: [ '1.7.0' ],
+37 silly audit   extend: [ '3.0.2' ],
+37 silly audit   'extend-shallow': [ '2.0.1', '3.0.2' ],
+37 silly audit   extglob: [ '2.0.4' ],
+37 silly audit   'fancy-log': [ '1.3.3' ],
+37 silly audit   'fast-levenshtein': [ '1.1.4' ],
+37 silly audit   'file-uri-to-path': [ '1.0.0' ],
+37 silly audit   'fill-range': [ '4.0.0' ],
+37 silly audit   'find-up': [ '1.1.2' ],
+37 silly audit   'findup-sync': [ '3.0.0', '2.0.0' ],
+37 silly audit   fined: [ '1.2.0' ],
+37 silly audit   'flagged-respawn': [ '1.0.1' ],
+37 silly audit   'flush-write-stream': [ '1.1.1' ],
+37 silly audit   'for-in': [ '1.0.2' ],
+37 silly audit   'for-own': [ '1.0.0' ],
+37 silly audit   'fragment-cache': [ '0.2.1' ],
+37 silly audit   'fs-mkdirp-stream': [ '1.0.0' ],
+37 silly audit   'fs.realpath': [ '1.0.0' ],
+37 silly audit   fsevents: [ '1.2.13' ],
+37 silly audit   'function-bind': [ '1.1.2' ],
+37 silly audit   'get-caller-file': [ '1.0.3' ],
+37 silly audit   'get-intrinsic': [ '1.3.0' ],
+37 silly audit   'get-proto': [ '1.0.1' ],
+37 silly audit   'get-value': [ '2.0.6' ],
+37 silly audit   glob: [ '7.2.3' ],
+37 silly audit   'glob-parent': [ '3.1.0' ],
+37 silly audit   'is-glob': [ '3.1.0', '4.0.3' ],
+37 silly audit   'glob-stream': [ '6.1.0' ],
+37 silly audit   'glob-watcher': [ '5.0.5' ],
+37 silly audit   'global-modules': [ '1.0.0' ],
+37 silly audit   'global-prefix': [ '1.0.2' ],
+37 silly audit   glogg: [ '1.0.2' ],
+37 silly audit   gopd: [ '1.2.0' ],
+37 silly audit   'graceful-fs': [ '4.2.11' ],
+37 silly audit   gulp: [ '4.0.2' ],
+37 silly audit   'gulp-cli': [ '2.3.0' ],
+37 silly audit   gulplog: [ '1.0.0' ],
+37 silly audit   'has-property-descriptors': [ '1.0.2' ],
+37 silly audit   'has-symbols': [ '1.1.0' ],
+37 silly audit   'has-value': [ '1.0.0', '0.3.1' ],
+37 silly audit   'has-values': [ '1.0.0', '0.1.4' ],
+37 silly audit   'kind-of': [ '4.0.0', '3.2.2', '5.1.0', '6.0.3' ],
+37 silly audit   hasown: [ '2.0.2' ],
+37 silly audit   'homedir-polyfill': [ '1.0.3' ],
+37 silly audit   'hosted-git-info': [ '2.8.9' ],
+37 silly audit   inflight: [ '1.0.6' ],
+37 silly audit   inherits: [ '2.0.4' ],
+37 silly audit   ini: [ '1.3.8' ],
+37 silly audit   interpret: [ '1.4.0' ],
+37 silly audit   'invert-kv': [ '1.0.0' ],
+37 silly audit   'is-absolute': [ '1.0.0' ],
+37 silly audit   'is-accessor-descriptor': [ '1.0.1' ],
+37 silly audit   'is-arrayish': [ '0.2.1' ],
+37 silly audit   'is-binary-path': [ '1.0.1' ],
+37 silly audit   'is-buffer': [ '1.1.6' ],
+37 silly audit   'is-core-module': [ '2.16.1' ],
+37 silly audit   'is-data-descriptor': [ '1.0.1' ],
+37 silly audit   'is-extendable': [ '0.1.1', '1.0.1' ],
+37 silly audit   'is-extglob': [ '2.1.1' ],
+37 silly audit   'is-fullwidth-code-point': [ '1.0.0' ],
+37 silly audit   'is-negated-glob': [ '1.0.0' ],
+37 silly audit   'is-relative': [ '1.0.0' ],
+37 silly audit   'is-unc-path': [ '1.0.0' ],
+37 silly audit   'is-utf8': [ '0.2.1' ],
+37 silly audit   'is-valid-glob': [ '1.0.0' ],
+37 silly audit   'is-windows': [ '1.0.2' ],
+37 silly audit   isarray: [ '1.0.0' ],
+37 silly audit   isexe: [ '2.0.0' ],
+37 silly audit   isobject: [ '3.0.1', '2.1.0' ],
+37 silly audit   jsbn: [ '1.1.0' ],
+37 silly audit   'json-stable-stringify-without-jsonify': [ '1.0.1' ],
+37 silly audit   'just-debounce': [ '1.1.0' ],
+37 silly audit   'last-run': [ '1.1.1' ],
+37 silly audit   lazystream: [ '1.0.1' ],
+37 silly audit   lcid: [ '1.0.0' ],
+37 silly audit   lead: [ '1.0.0' ],
+37 silly audit   liftoff: [ '3.1.0' ],
+37 silly audit   'load-json-file': [ '1.1.0' ],
+37 silly audit   'make-iterator': [ '1.0.1' ],
+37 silly audit   'map-cache': [ '0.2.2' ],
+37 silly audit   'map-visit': [ '1.0.0' ],
+37 silly audit   matchdep: [ '2.0.0' ],
+37 silly audit   'math-intrinsics': [ '1.1.0' ],
+37 silly audit   micromatch: [ '3.1.10' ],
+37 silly audit   minimatch: [ '3.1.2' ],
+37 silly audit   'miniprogram-sm-crypto': [ '0.3.13' ],
+37 silly audit   'mixin-deep': [ '1.3.2' ],
+37 silly audit   ms: [ '2.0.0' ],
+37 silly audit   'mute-stdout': [ '1.0.1' ],
+37 silly audit   nan: [ '2.22.2' ],
+37 silly audit   nanomatch: [ '1.2.13' ],
+37 silly audit   'next-tick': [ '1.1.0' ],
+37 silly audit   'normalize-package-data': [ '2.5.0' ],
+37 silly audit   'now-and-later': [ '2.0.1' ],
+37 silly audit   'number-is-nan': [ '1.0.1' ],
+37 silly audit   'object-copy': [ '0.1.0' ],
+37 silly audit   'object-keys': [ '1.1.1' ],
+37 silly audit   'object-visit': [ '1.0.1' ],
+37 silly audit   'object.assign': [ '4.1.7' ],
+37 silly audit   'object.defaults': [ '1.1.0' ],
+37 silly audit   'object.map': [ '1.0.1' ],
+37 silly audit   'object.pick': [ '1.3.0' ],
+37 silly audit   'object.reduce': [ '1.0.1' ],
+37 silly audit   once: [ '1.4.0' ],
+37 silly audit   'ordered-read-streams': [ '1.0.1' ],
+37 silly audit   'os-locale': [ '1.4.0' ],
+37 silly audit   'parse-filepath': [ '1.0.2' ],
+37 silly audit   'parse-json': [ '2.2.0' ],
+37 silly audit   'parse-node-version': [ '1.0.1' ],
+37 silly audit   'parse-passwd': [ '1.0.0' ],
+37 silly audit   pascalcase: [ '0.1.1' ],
+37 silly audit   'path-dirname': [ '1.0.2' ],
+37 silly audit   'path-exists': [ '2.1.0' ],
+37 silly audit   'path-is-absolute': [ '1.0.1' ],
+37 silly audit   'path-parse': [ '1.0.7' ],
+37 silly audit   'path-root': [ '0.1.1' ],
+37 silly audit   'path-root-regex': [ '0.1.2' ],
+37 silly audit   'path-type': [ '1.1.0' ],
+37 silly audit   pify: [ '2.3.0' ],
+37 silly audit   pinkie: [ '2.0.4' ],
+37 silly audit   'pinkie-promise': [ '2.0.1' ],
+37 silly audit   'posix-character-classes': [ '0.1.1' ],
+37 silly audit   'pretty-hrtime': [ '1.0.3' ],
+37 silly audit   'process-nextick-args': [ '2.0.1' ],
+37 silly audit   pump: [ '2.0.1' ],
+37 silly audit   pumpify: [ '1.5.1' ],
+37 silly audit   'read-pkg': [ '1.1.0' ],
+37 silly audit   'read-pkg-up': [ '1.0.1' ],
+37 silly audit   'readable-stream': [ '2.3.8', '3.6.2' ],
+37 silly audit   readdirp: [ '2.2.1' ],
+37 silly audit   rechoir: [ '0.6.2' ],
+37 silly audit   'regex-not': [ '1.0.2' ],
+37 silly audit   'remove-bom-buffer': [ '3.0.0' ],
+37 silly audit   'remove-bom-stream': [ '1.2.0' ],
+37 silly audit   'remove-trailing-separator': [ '1.1.0' ],
+37 silly audit   'repeat-element': [ '1.1.4' ],
+37 silly audit   'repeat-string': [ '1.6.1' ],
+37 silly audit   'replace-ext': [ '1.0.1' ],
+37 silly audit   'replace-homedir': [ '1.0.0' ],
+37 silly audit   'require-directory': [ '2.1.1' ],
+37 silly audit   'require-main-filename': [ '1.0.1' ],
+37 silly audit   resolve: [ '1.22.10' ],
+37 silly audit   'resolve-dir': [ '1.0.1' ],
+37 silly audit   'resolve-options': [ '1.1.0' ],
+37 silly audit   'resolve-url': [ '0.2.1' ],
+37 silly audit   ret: [ '0.1.15' ],
+37 silly audit   'safe-buffer': [ '5.1.2' ],
+37 silly audit   'safe-regex': [ '1.1.0' ],
+37 silly audit   semver: [ '5.7.2' ],
+37 silly audit   'semver-greatest-satisfied-range': [ '1.1.0' ],
+37 silly audit   'set-blocking': [ '2.0.0' ],
+37 silly audit   'set-function-length': [ '1.2.2' ],
+37 silly audit   'set-value': [ '2.0.1' ],
+37 silly audit   snapdragon: [ '0.8.2' ],
+37 silly audit   'snapdragon-node': [ '2.1.1' ],
+37 silly audit   'snapdragon-util': [ '3.0.1' ],
+37 silly audit   'source-map': [ '0.5.7' ],
+37 silly audit   'source-map-resolve': [ '0.5.3' ],
+37 silly audit   'source-map-url': [ '0.4.1' ],
+37 silly audit   sparkles: [ '1.0.1' ],
+37 silly audit   'spdx-correct': [ '3.2.0' ],
+37 silly audit   'spdx-exceptions': [ '2.5.0' ],
+37 silly audit   'spdx-expression-parse': [ '3.0.1' ],
+37 silly audit   'spdx-license-ids': [ '3.0.21' ],
+37 silly audit   'split-string': [ '3.1.0' ],
+37 silly audit   'stack-trace': [ '0.0.10' ],
+37 silly audit   'static-extend': [ '0.1.2' ],
+37 silly audit   'stream-exhaust': [ '1.0.2' ],
+37 silly audit   'stream-shift': [ '1.0.3' ],
+37 silly audit   string_decoder: [ '1.1.1' ],
+37 silly audit   'string-width': [ '1.0.2' ],
+37 silly audit   'strip-ansi': [ '3.0.1' ],
+37 silly audit   'strip-bom': [ '2.0.0' ],
+37 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+37 silly audit   'sver-compat': [ '1.5.0' ],
+37 silly audit   'through2-filter': [ '3.0.0' ],
+37 silly audit   'time-stamp': [ '1.1.0' ],
+37 silly audit   'to-absolute-glob': [ '2.0.2' ],
+37 silly audit   'to-object-path': [ '0.3.0' ],
+37 silly audit   'to-regex': [ '3.0.2' ],
+37 silly audit   'to-regex-range': [ '2.1.1' ],
+37 silly audit   'to-through': [ '2.0.0' ],
+37 silly audit   type: [ '2.7.3' ],
+37 silly audit   typedarray: [ '0.0.6' ],
+37 silly audit   'unc-path-regex': [ '0.1.2' ],
+37 silly audit   undertaker: [ '1.3.0' ],
+37 silly audit   'undertaker-registry': [ '1.0.1' ],
+37 silly audit   'union-value': [ '1.0.1' ],
+37 silly audit   'unique-stream': [ '2.3.1' ],
+37 silly audit   'unset-value': [ '1.0.0' ],
+37 silly audit   upath: [ '1.2.0' ],
+37 silly audit   urix: [ '0.1.0' ],
+37 silly audit   use: [ '3.1.1' ],
+37 silly audit   'util-deprecate': [ '1.0.2' ],
+37 silly audit   v8flags: [ '3.2.0' ],
+37 silly audit   'validate-npm-package-license': [ '3.0.4' ],
+37 silly audit   'value-or-function': [ '3.0.0' ],
+37 silly audit   vinyl: [ '2.2.1' ],
+37 silly audit   'vinyl-fs': [ '3.0.3' ],
+37 silly audit   'vinyl-sourcemap': [ '1.1.0' ],
+37 silly audit   which: [ '1.3.1' ],
+37 silly audit   'which-module': [ '1.0.0' ],
+37 silly audit   'wrap-ansi': [ '2.1.0' ],
+37 silly audit   wrappy: [ '1.0.2' ],
+37 silly audit   xtend: [ '4.0.2' ],
+37 silly audit   y18n: [ '3.2.2' ],
+37 silly audit   yargs: [ '7.1.2' ],
+37 silly audit   'yargs-parser': [ '5.0.1' ],
+37 silly audit   through2: [ '4.0.2', '2.0.5' ]
+37 silly audit }
+38 verbose reify failed optional dependency E:\apwj\miniprogram\node_modules\fsevents
+39 silly reify mark deleted [ 'E:\\apwj\\miniprogram\\node_modules\\fsevents' ]
+40 verbose reify failed optional dependency E:\apwj\miniprogram\node_modules\bindings
+41 silly reify mark deleted [ 'E:\\apwj\\miniprogram\\node_modules\\bindings' ]
+42 verbose reify failed optional dependency E:\apwj\miniprogram\node_modules\nan
+43 silly reify mark deleted [ 'E:\\apwj\\miniprogram\\node_modules\\nan' ]
+44 verbose reify failed optional dependency E:\apwj\miniprogram\node_modules\file-uri-to-path
+45 silly reify mark deleted [ 'E:\\apwj\\miniprogram\\node_modules\\file-uri-to-path' ]
+46 silly tarball no local data for through2@https://registry.npmmirror.com/through2/-/through2-4.0.2.tgz. Extracting by manifest.
+47 silly tarball no local data for readable-stream@https://registry.npmmirror.com/readable-stream/-/readable-stream-3.6.2.tgz. Extracting by manifest.
+48 http fetch POST 404 https://registry.npmmirror.com/-/npm/v1/security/advisories/bulk 224ms
+49 silly audit bulk request failed [object Object]
+50 http fetch POST 404 https://registry.npmmirror.com/-/npm/v1/security/audits/quick 27ms
+51 verbose audit error HttpErrorGeneral: 404 Not Found - POST https://registry.npmmirror.com/-/npm/v1/security/audits/quick - [NOT_IMPLEMENTED] /-/npm/v1/security/* not implemented yet
+51 verbose audit error     at D:\nodejs\node_modules\npm\node_modules\npm-registry-fetch\lib\check-response.js:95:15
+51 verbose audit error     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+51 verbose audit error     at async [getReport] (D:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\audit-report.js:336:21)
+51 verbose audit error     at async AuditReport.run (D:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\audit-report.js:106:19) {
+51 verbose audit error   headers: [Object: null prototype] {
+51 verbose audit error     server: [ 'Tengine' ],
+51 verbose audit error     date: [ 'Mon, 12 May 2025 03:05:51 GMT' ],
+51 verbose audit error     'content-type': [ 'application/json' ],
+51 verbose audit error     'transfer-encoding': [ 'chunked' ],
+51 verbose audit error     connection: [ 'keep-alive' ],
+51 verbose audit error     'strict-transport-security': [ 'max-age=5184000' ],
+51 verbose audit error     via: [ 'kunlun1.cn6425[,404666]' ],
+51 verbose audit error     'timing-allow-origin': [ '*' ],
+51 verbose audit error     eagleid: [ '3da0c00b17470191512992938e' ],
+51 verbose audit error     'x-fetch-attempts': [ '1' ]
+51 verbose audit error   },
+51 verbose audit error   statusCode: 404,
+51 verbose audit error   code: 'E404',
+51 verbose audit error   method: 'POST',
+51 verbose audit error   uri: 'https://registry.npmmirror.com/-/npm/v1/security/audits/quick',
+51 verbose audit error   body: {
+51 verbose audit error     error: '[NOT_IMPLEMENTED] /-/npm/v1/security/* not implemented yet'
+51 verbose audit error   },
+51 verbose audit error   pkgid: undefined
+51 verbose audit error }
+52 silly audit error [object Object]
+53 silly audit report null
+54 http fetch GET 200 https://cdn.npmmirror.com/packages/through2/4.0.2/through2-4.0.2.tgz 476ms (cache miss)
+55 http fetch GET 200 https://cdn.npmmirror.com/packages/readable-stream/3.6.2/readable-stream-3.6.2.tgz 539ms (cache miss)
+56 silly ADD
+57 silly ADD
+58 silly ADD
+59 silly ADD
+60 silly ADD node_modules/vinyl-fs/node_modules/through2
+61 silly ADD node_modules/to-through/node_modules/through2
+62 silly ADD node_modules/through2-filter/node_modules/through2
+63 silly CHANGE node_modules/through2
+64 silly ADD node_modules/through2/node_modules/readable-stream
+65 silly ADD node_modules/remove-bom-stream/node_modules/through2
+66 silly ADD node_modules/fs-mkdirp-stream/node_modules/through2
+67 verbose cwd E:\apwj\miniprogram
+68 verbose os Windows_NT 10.0.26100
+69 verbose node v22.11.0
+70 verbose npm  v10.9.0
+71 verbose exit 0
+72 info ok

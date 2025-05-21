@@ -1,0 +1,228 @@
+.container {
+  padding: 0 20rpx 20rpx;
+  background-color: #f5f9ff;
+  min-height: 100vh;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 32rpx;
+  margin: 0 0 20rpx 0;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 0 20rpx rgba(25, 137, 250, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.info-item {
+  display: flex;
+  margin-bottom: 20rpx;
+  font-size: 28rpx;
+  align-items: center;
+}
+
+.info-label {
+  color: #666;
+  width: 160rpx;
+  flex-shrink: 0;
+  line-height: 1.5;
+  padding: 4rpx 0;
+}
+
+.info-value {
+  color: #333;
+  flex: 1;
+  word-break: break-all;
+  line-height: 1.5;
+  padding: 4rpx 0;
+  display: flex;
+  align-items: center;
+}
+
+.status-card {
+  background: #f8f8f8;
+  border-left: 8rpx solid;
+  padding: 30rpx;
+  box-shadow: 0 0 20rpx rgba(25, 137, 250, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.status-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15rpx;
+}
+
+.status-badge {
+  padding: 6rpx 20rpx;
+  border-radius: 20rpx;
+  font-size: 26rpx;
+  color: white;
+  margin-left: 15rpx;
+}
+
+.status-0 {
+  color: #FF9500;
+  border-left-color: #FF9500;
+}
+.status-1 {
+  color: #1989fa;
+  border-left-color: #1989fa;
+}
+.status-2 {
+  color: #07C160;
+  border-left-color: #07C160;
+}
+
+.status-0 .status-badge {
+  background: #FF9500;
+}
+.status-1 .status-badge {
+  background: #1989fa;
+}
+.status-2 .status-badge {
+  background: #07C160;
+}
+
+.status-time {
+  font-size: 26rpx;
+  color: #999;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40rpx;
+  color: #999;
+  font-size: 28rpx;
+}
+
+.media-card {
+  padding-bottom: 10rpx;
+  box-shadow: 0 0 20rpx rgba(25, 137, 250, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.media-scroll {
+  white-space: nowrap;
+  padding: 10rpx 0;
+}
+
+.media-container {
+  display: inline-flex;
+}
+
+.media-wrapper {
+  display: inline-block;
+  margin-right: 20rpx;
+}
+
+.media-item {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 8rpx;
+  background: #f1f1f1;
+}
+
+.map-container {
+  width: 100%;
+  margin: 0 0 20rpx 0;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: none;
+  border: none;
+  height: 350rpx;
+}
+
+.marker {
+  width: 40rpx;
+  height: 40rpx;
+  background: #3a6eff;
+  border-radius: 50%;
+  border: 4rpx solid white;
+  box-shadow: 0 0 10rpx rgba(58, 110, 255, 0.3);
+}
+
+.cancel-btn-container {
+  position: fixed;
+  bottom: 40rpx;
+  right: 40rpx;
+  z-index: 100;
+}
+
+.cancel-btn {
+  padding: 16rpx 30rpx;
+  border: 1rpx solid #f5222d;
+  border-radius: 8rpx;
+  color: #f5222d;
+  font-size: 28rpx;
+  background-color: transparent;
+}
+
+.status-3 {
+  color: #f5222d;
+  border-left-color: #f5222d;
+}
+
+.status-3 .status-badge {
+  background: #f5222d;
+}
+
+/* 优化按钮样式 */
+.fixed-btn-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30rpx;
+  background: linear-gradient(to top, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
+  backdrop-filter: blur(10rpx);
+  z-index: 100;
+  box-shadow: 0 -4rpx 20rpx rgba(0,0,0,0.1);
+}
+
+.action-btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 20rpx;
+}
+
+.action-btn {
+  flex: 1;
+  color: white;
+  text-align: center;
+  padding: 24rpx;
+  border-radius: 12rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.1);
+}
+
+.action-btn.accept-btn {
+  background: #07C160;
+}
+
+.action-btn.cancel-btn {
+  background: #ff4d4f;
+}
+
+.action-btn.complete-btn {
+  background: #1989fa;
+}
+
+.action-btn.notify-btn {
+  background: #1989fa;
+  color: white;
+}

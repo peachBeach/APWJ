@@ -1,0 +1,177 @@
+0 verbose cli D:\nodejs\node.exe D:\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.0
+2 info using node@v22.11.0
+3 silly config load:file:D:\nodejs\node_modules\npm\npmrc
+4 silly config load:file:E:\apwj\cloudfunctions\getOrderCounts\.npmrc
+5 silly config load:file:C:\Users\36402\.npmrc
+6 silly config load:file:D:\nodejs\node_global\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install"
+9 verbose logfile logs-max:10 dir:E:\apwj\cloudfunctions\getOrderCounts\.npm-cache\_logs\2025-05-11T07_56_30_272Z-
+10 verbose logfile E:\apwj\cloudfunctions\getOrderCounts\.npm-cache\_logs\2025-05-11T07_56_30_272Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly idealTree buildDeps
+14 silly reify moves {}
+15 silly audit bulk request {
+15 silly audit   '@cloudbase/database': [ '1.4.1' ],
+15 silly audit   '@cloudbase/node-sdk': [ '2.10.0' ],
+15 silly audit   '@cloudbase/signature-nodejs': [ '1.0.0-beta.0' ],
+15 silly audit   '@protobufjs/aspromise': [ '1.1.2' ],
+15 silly audit   '@protobufjs/base64': [ '1.1.2' ],
+15 silly audit   '@protobufjs/codegen': [ '2.0.4' ],
+15 silly audit   '@protobufjs/eventemitter': [ '1.1.0' ],
+15 silly audit   '@protobufjs/fetch': [ '1.1.0' ],
+15 silly audit   '@protobufjs/float': [ '1.0.2' ],
+15 silly audit   '@protobufjs/inquire': [ '1.1.0' ],
+15 silly audit   '@protobufjs/path': [ '1.1.2' ],
+15 silly audit   '@protobufjs/pool': [ '1.1.0' ],
+15 silly audit   '@protobufjs/utf8': [ '1.1.0' ],
+15 silly audit   '@types/clone': [ '0.1.30' ],
+15 silly audit   '@types/node': [ '22.15.17' ],
+15 silly audit   agentkeepalive: [ '4.6.0' ],
+15 silly audit   ajv: [ '6.12.6' ],
+15 silly audit   asn1: [ '0.2.6' ],
+15 silly audit   'assert-plus': [ '1.0.0' ],
+15 silly audit   asynckit: [ '0.4.0' ],
+15 silly audit   'aws-sign2': [ '0.7.0' ],
+15 silly audit   aws4: [ '1.13.2' ],
+15 silly audit   axios: [ '0.21.4' ],
+15 silly audit   'base64-js': [ '1.5.1' ],
+15 silly audit   'bcrypt-pbkdf': [ '1.0.2' ],
+15 silly audit   'bignumber.js': [ '9.3.0' ],
+15 silly audit   bson: [ '4.7.2' ],
+15 silly audit   buffer: [ '5.7.1' ],
+15 silly audit   'buffer-equal-constant-time': [ '1.0.1' ],
+15 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+15 silly audit   'call-bound': [ '1.0.4' ],
+15 silly audit   caseless: [ '0.12.0' ],
+15 silly audit   clone: [ '2.1.2' ],
+15 silly audit   'combined-stream': [ '1.0.8' ],
+15 silly audit   'core-util-is': [ '1.0.2' ],
+15 silly audit   dashdash: [ '1.14.1' ],
+15 silly audit   'delayed-stream': [ '1.0.0' ],
+15 silly audit   'dunder-proto': [ '1.0.1' ],
+15 silly audit   'ecc-jsbn': [ '0.1.2' ],
+15 silly audit   'ecdsa-sig-formatter': [ '1.0.11' ],
+15 silly audit   'es-define-property': [ '1.0.1' ],
+15 silly audit   'es-errors': [ '1.3.0' ],
+15 silly audit   'es-object-atoms': [ '1.1.1' ],
+15 silly audit   extend: [ '3.0.2' ],
+15 silly audit   extsprintf: [ '1.3.0' ],
+15 silly audit   'fast-deep-equal': [ '3.1.3' ],
+15 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+15 silly audit   'follow-redirects': [ '1.15.9' ],
+15 silly audit   'forever-agent': [ '0.6.1' ],
+15 silly audit   'form-data': [ '2.3.3' ],
+15 silly audit   'function-bind': [ '1.1.2' ],
+15 silly audit   'get-intrinsic': [ '1.3.0' ],
+15 silly audit   'get-proto': [ '1.0.1' ],
+15 silly audit   getpass: [ '0.1.7' ],
+15 silly audit   gopd: [ '1.2.0' ],
+15 silly audit   'har-schema': [ '2.0.0' ],
+15 silly audit   'har-validator': [ '5.1.5' ],
+15 silly audit   'has-symbols': [ '1.1.0' ],
+15 silly audit   hasown: [ '2.0.2' ],
+15 silly audit   'http-signature': [ '1.2.0' ],
+15 silly audit   'humanize-ms': [ '1.2.1' ],
+15 silly audit   ieee754: [ '1.2.1' ],
+15 silly audit   'is-stream': [ '2.0.1' ],
+15 silly audit   'is-typedarray': [ '1.0.0' ],
+15 silly audit   isstream: [ '0.1.2' ],
+15 silly audit   jsbn: [ '0.1.1' ],
+15 silly audit   'json-bigint': [ '1.0.0' ],
+15 silly audit   'json-schema': [ '0.4.0' ],
+15 silly audit   'json-schema-traverse': [ '0.4.1' ],
+15 silly audit   'json-stringify-safe': [ '5.0.1' ],
+15 silly audit   jsonwebtoken: [ '8.5.1' ],
+15 silly audit   jsprim: [ '1.4.2' ],
+15 silly audit   jwa: [ '1.4.2' ],
+15 silly audit   jws: [ '3.2.2' ],
+15 silly audit   'lodash.clonedeep': [ '4.5.0' ],
+15 silly audit   'lodash.includes': [ '4.3.0' ],
+15 silly audit   'lodash.isboolean': [ '3.0.3' ],
+15 silly audit   'lodash.isinteger': [ '4.0.4' ],
+15 silly audit   'lodash.isnumber': [ '3.0.3' ],
+15 silly audit   'lodash.isplainobject': [ '4.0.6' ],
+15 silly audit   'lodash.isstring': [ '4.0.1' ],
+15 silly audit   'lodash.once': [ '4.1.1' ],
+15 silly audit   'lodash.set': [ '4.3.2' ],
+15 silly audit   'lodash.unset': [ '4.5.2' ],
+15 silly audit   long: [ '5.3.2' ],
+15 silly audit   'math-intrinsics': [ '1.1.0' ],
+15 silly audit   'mime-db': [ '1.52.0' ],
+15 silly audit   'mime-types': [ '2.1.35' ],
+15 silly audit   ms: [ '2.1.3' ],
+15 silly audit   'oauth-sign': [ '0.9.0' ],
+15 silly audit   'object-inspect': [ '1.13.4' ],
+15 silly audit   'performance-now': [ '2.1.0' ],
+15 silly audit   protobufjs: [ '7.5.1' ],
+15 silly audit   psl: [ '1.15.0' ],
+15 silly audit   punycode: [ '2.3.1', '1.4.1' ],
+15 silly audit   qs: [ '6.5.3', '6.14.0' ],
+15 silly audit   request: [ '2.88.2' ],
+15 silly audit   retry: [ '0.13.1' ],
+15 silly audit   'safe-buffer': [ '5.2.1' ],
+15 silly audit   'safer-buffer': [ '2.1.2' ],
+15 silly audit   sax: [ '1.4.1' ],
+15 silly audit   semver: [ '5.7.2' ],
+15 silly audit   'side-channel': [ '1.1.0' ],
+15 silly audit   'side-channel-list': [ '1.0.0' ],
+15 silly audit   'side-channel-map': [ '1.0.1' ],
+15 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+15 silly audit   sshpk: [ '1.18.0' ],
+15 silly audit   'tough-cookie': [ '2.5.0' ],
+15 silly audit   tslib: [ '1.14.1' ],
+15 silly audit   'tunnel-agent': [ '0.6.0' ],
+15 silly audit   tweetnacl: [ '0.14.5' ],
+15 silly audit   'undici-types': [ '6.21.0' ],
+15 silly audit   'uri-js': [ '4.4.1' ],
+15 silly audit   url: [ '0.11.4' ],
+15 silly audit   uuid: [ '3.4.0' ],
+15 silly audit   verror: [ '1.10.0' ],
+15 silly audit   'wx-server-sdk': [ '3.0.1' ],
+15 silly audit   xml2js: [ '0.5.0' ],
+15 silly audit   xmlbuilder: [ '11.0.1' ]
+15 silly audit }
+16 http fetch POST 404 https://registry.npmmirror.com/-/npm/v1/security/advisories/bulk 235ms
+17 silly audit bulk request failed [object Object]
+18 http fetch POST 404 https://registry.npmmirror.com/-/npm/v1/security/audits/quick 33ms
+19 verbose audit error HttpErrorGeneral: 404 Not Found - POST https://registry.npmmirror.com/-/npm/v1/security/audits/quick - [NOT_IMPLEMENTED] /-/npm/v1/security/* not implemented yet
+19 verbose audit error     at D:\nodejs\node_modules\npm\node_modules\npm-registry-fetch\lib\check-response.js:95:15
+19 verbose audit error     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+19 verbose audit error     at async [getReport] (D:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\audit-report.js:336:21)
+19 verbose audit error     at async AuditReport.run (D:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\audit-report.js:106:19)
+19 verbose audit error     at async Arborist.reify (D:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\reify.js:268:24)
+19 verbose audit error     at async Install.exec (D:\nodejs\node_modules\npm\lib\commands\install.js:150:5)
+19 verbose audit error     at async Npm.exec (D:\nodejs\node_modules\npm\lib\npm.js:207:9)
+19 verbose audit error     at async module.exports (D:\nodejs\node_modules\npm\lib\cli\entry.js:74:5) {
+19 verbose audit error   headers: [Object: null prototype] {
+19 verbose audit error     server: [ 'Tengine' ],
+19 verbose audit error     date: [ 'Sun, 11 May 2025 07:56:38 GMT' ],
+19 verbose audit error     'content-type': [ 'application/json' ],
+19 verbose audit error     'transfer-encoding': [ 'chunked' ],
+19 verbose audit error     connection: [ 'keep-alive' ],
+19 verbose audit error     'strict-transport-security': [ 'max-age=5184000' ],
+19 verbose audit error     via: [ 'kunlun18.cn8001[,404666]' ],
+19 verbose audit error     'timing-allow-origin': [ '*' ],
+19 verbose audit error     eagleid: [ 'dcb5a62617469501985484692e' ],
+19 verbose audit error     'x-fetch-attempts': [ '1' ]
+19 verbose audit error   },
+19 verbose audit error   statusCode: 404,
+19 verbose audit error   code: 'E404',
+19 verbose audit error   method: 'POST',
+19 verbose audit error   uri: 'https://registry.npmmirror.com/-/npm/v1/security/audits/quick',
+19 verbose audit error   body: {
+19 verbose audit error     error: '[NOT_IMPLEMENTED] /-/npm/v1/security/* not implemented yet'
+19 verbose audit error   },
+19 verbose audit error   pkgid: undefined
+19 verbose audit error }
+20 silly audit error [object Object]
+21 silly audit report null
+22 verbose cwd E:\apwj\cloudfunctions\getOrderCounts
+23 verbose os Windows_NT 10.0.26100
+24 verbose node v22.11.0
+25 verbose npm  v10.9.0
+26 verbose exit 0
+27 info ok

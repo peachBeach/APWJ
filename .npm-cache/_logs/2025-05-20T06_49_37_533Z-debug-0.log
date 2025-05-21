@@ -1,0 +1,29 @@
+0 verbose cli D:\nodejs\node.exe D:\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.0
+2 info using node@v22.11.0
+3 silly config load:file:D:\nodejs\node_modules\npm\npmrc
+4 silly config load:file:E:\apwj\.npmrc
+5 silly config load:file:C:\Users\36402\.npmrc
+6 silly config load:file:D:\nodejs\node_global\etc\npmrc
+7 verbose title npm exec @cloudbase/cli functions:invoke createTestOrder --data {orderId:test_order_123,serviceName:安平五金上门维修}
+8 verbose argv "exec" "--" "@cloudbase/cli" "functions:invoke" "createTestOrder" "--data" "{orderId:test_order_123,serviceName:安平五金上门维修}"
+9 verbose logfile logs-max:10 dir:E:\apwj\.npm-cache\_logs\2025-05-20T06_49_37_533Z-
+10 verbose logfile E:\apwj\.npm-cache\_logs\2025-05-20T06_49_37_533Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files
+13 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+14 http fetch GET 200 https://registry.npmmirror.com/@cloudbase%2fcli 254ms (cache miss)
+15 verbose stack Error: could not determine executable to run
+15 verbose stack     at getBinFromManifest (D:\nodejs\node_modules\npm\node_modules\libnpmexec\lib\get-bin-from-manifest.js:17:23)
+15 verbose stack     at exec (D:\nodejs\node_modules\npm\node_modules\libnpmexec\lib\index.js:202:15)
+15 verbose stack     at async Npm.exec (D:\nodejs\node_modules\npm\lib\npm.js:207:9)
+15 verbose stack     at async module.exports (D:\nodejs\node_modules\npm\lib\cli\entry.js:74:5)
+16 verbose pkgid @cloudbase/cli@2.6.16
+17 error could not determine executable to run
+18 verbose cwd E:\apwj
+19 verbose os Windows_NT 10.0.26100
+20 verbose node v22.11.0
+21 verbose npm  v10.9.0
+22 verbose exit 1
+23 verbose code 1
+24 error A complete log of this run can be found in: E:\apwj\.npm-cache\_logs\2025-05-20T06_49_37_533Z-debug-0.log

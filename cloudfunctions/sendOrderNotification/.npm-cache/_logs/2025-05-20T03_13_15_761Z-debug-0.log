@@ -1,0 +1,291 @@
+0 verbose cli D:\nodejs\node.exe D:\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.0
+2 info using node@v22.11.0
+3 silly config load:file:D:\nodejs\node_modules\npm\npmrc
+4 silly config load:file:E:\apwj\cloudfunctions\sendOrderNotification\.npmrc
+5 silly config load:file:C:\Users\36402\.npmrc
+6 silly config load:file:D:\nodejs\node_global\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install"
+9 verbose logfile logs-max:10 dir:E:\apwj\cloudfunctions\sendOrderNotification\.npm-cache\_logs\2025-05-20T03_13_15_761Z-
+10 verbose logfile E:\apwj\cloudfunctions\sendOrderNotification\.npm-cache\_logs\2025-05-20T03_13_15_761Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly idealTree buildDeps
+14 silly fetch manifest wx-server-sdk@^2.6.0
+15 silly packumentCache full:https://registry.npmmirror.com/wx-server-sdk cache-miss
+16 http fetch GET 200 https://registry.npmmirror.com/wx-server-sdk 60ms (cache hit)
+17 silly packumentCache full:https://registry.npmmirror.com/wx-server-sdk set size:244673 disposed:false
+18 silly placeDep ROOT wx-server-sdk@2.7.2 REPLACE for: send-order-notification@1.0.0 want: ^2.6.0
+19 silly fetch manifest protobufjs@^6.8.8
+20 silly packumentCache full:https://registry.npmmirror.com/protobufjs cache-miss
+21 http fetch GET 200 https://registry.npmmirror.com/protobufjs 262ms (cache updated)
+22 silly packumentCache full:https://registry.npmmirror.com/protobufjs set size:83506 disposed:false
+23 silly placeDep ROOT protobufjs@6.11.4 OK for: wx-server-sdk@2.7.2 want: ^6.8.8
+24 silly fetch manifest @protobufjs/aspromise@^1.1.2
+25 silly packumentCache full:https://registry.npmmirror.com/@protobufjs%2faspromise cache-miss
+26 silly fetch manifest @protobufjs/base64@^1.1.2
+27 silly packumentCache full:https://registry.npmmirror.com/@protobufjs%2fbase64 cache-miss
+28 silly fetch manifest @protobufjs/codegen@^2.0.4
+29 silly packumentCache full:https://registry.npmmirror.com/@protobufjs%2fcodegen cache-miss
+30 silly fetch manifest @protobufjs/eventemitter@^1.1.0
+31 silly packumentCache full:https://registry.npmmirror.com/@protobufjs%2feventemitter cache-miss
+32 silly fetch manifest @protobufjs/fetch@^1.1.0
+33 silly packumentCache full:https://registry.npmmirror.com/@protobufjs%2ffetch cache-miss
+34 silly fetch manifest @protobufjs/float@^1.0.2
+35 silly packumentCache full:https://registry.npmmirror.com/@protobufjs%2ffloat cache-miss
+36 silly fetch manifest @protobufjs/inquire@^1.1.0
+37 silly packumentCache full:https://registry.npmmirror.com/@protobufjs%2finquire cache-miss
+38 http fetch GET 200 https://registry.npmmirror.com/@protobufjs%2feventemitter 114ms (cache revalidated)
+39 silly packumentCache full:https://registry.npmmirror.com/@protobufjs%2feventemitter set size:10936 disposed:false
+40 silly fetch manifest @protobufjs/path@^1.1.2
+41 silly packumentCache full:https://registry.npmmirror.com/@protobufjs%2fpath cache-miss
+42 http fetch GET 200 https://registry.npmmirror.com/@protobufjs%2fbase64 131ms (cache revalidated)
+43 silly packumentCache full:https://registry.npmmirror.com/@protobufjs%2fbase64 set size:13744 disposed:false
+44 silly fetch manifest @protobufjs/pool@^1.1.0
+45 silly packumentCache full:https://registry.npmmirror.com/@protobufjs%2fpool cache-miss
+46 http fetch GET 200 https://registry.npmmirror.com/@protobufjs%2fcodegen 141ms (cache revalidated)
+47 silly packumentCache full:https://registry.npmmirror.com/@protobufjs%2fcodegen set size:21618 disposed:false
+48 silly fetch manifest @protobufjs/utf8@^1.1.0
+49 silly packumentCache full:https://registry.npmmirror.com/@protobufjs%2futf8 cache-miss
+50 http fetch GET 200 https://registry.npmmirror.com/@protobufjs%2faspromise 148ms (cache revalidated)
+51 silly packumentCache full:https://registry.npmmirror.com/@protobufjs%2faspromise set size:11074 disposed:false
+52 silly fetch manifest @types/long@^4.0.1
+53 silly packumentCache full:https://registry.npmmirror.com/@types%2flong cache-miss
+54 http fetch GET 200 https://registry.npmmirror.com/@protobufjs%2ffetch 168ms (cache revalidated)
+55 silly packumentCache full:https://registry.npmmirror.com/@protobufjs%2ffetch set size:9768 disposed:false
+56 silly fetch manifest @types/node@>=13.7.0
+57 silly packumentCache full:https://registry.npmmirror.com/@types%2fnode cache-miss
+58 http fetch GET 200 https://registry.npmmirror.com/@protobufjs%2finquire 172ms (cache revalidated)
+59 silly packumentCache full:https://registry.npmmirror.com/@protobufjs%2finquire set size:6716 disposed:false
+60 silly fetch manifest long@^4.0.0
+61 silly packumentCache full:https://registry.npmmirror.com/long cache-miss
+62 http fetch GET 200 https://registry.npmmirror.com/@protobufjs%2ffloat 186ms (cache revalidated)
+63 silly packumentCache full:https://registry.npmmirror.com/@protobufjs%2ffloat set size:9727 disposed:false
+64 http fetch GET 200 https://registry.npmmirror.com/@protobufjs%2fpath 85ms (cache revalidated)
+65 silly packumentCache full:https://registry.npmmirror.com/@protobufjs%2fpath set size:9908 disposed:false
+66 http fetch GET 200 https://registry.npmmirror.com/@types%2flong 65ms (cache miss)
+67 silly packumentCache full:https://registry.npmmirror.com/@types%2flong set size:7163 disposed:false
+68 http fetch GET 200 https://registry.npmmirror.com/long 76ms (cache revalidated)
+69 silly packumentCache full:https://registry.npmmirror.com/long set size:80987 disposed:false
+70 http fetch GET 200 https://registry.npmmirror.com/@protobufjs%2fpool 132ms (cache revalidated)
+71 silly packumentCache full:https://registry.npmmirror.com/@protobufjs%2fpool set size:10359 disposed:false
+72 http fetch GET 200 https://registry.npmmirror.com/@protobufjs%2futf8 129ms (cache revalidated)
+73 silly packumentCache full:https://registry.npmmirror.com/@protobufjs%2futf8 set size:13318 disposed:false
+74 http fetch GET 200 https://registry.npmmirror.com/@types%2fnode 223ms (cache updated)
+75 silly packumentCache full:https://registry.npmmirror.com/@types%2fnode set size:1042672 disposed:false
+76 silly placeDep ROOT @protobufjs/aspromise@1.1.2 OK for: protobufjs@6.11.4 want: ^1.1.2
+77 silly placeDep ROOT @protobufjs/base64@1.1.2 OK for: protobufjs@6.11.4 want: ^1.1.2
+78 silly placeDep ROOT @protobufjs/codegen@2.0.4 OK for: protobufjs@6.11.4 want: ^2.0.4
+79 silly placeDep ROOT @protobufjs/eventemitter@1.1.0 OK for: protobufjs@6.11.4 want: ^1.1.0
+80 silly placeDep ROOT @protobufjs/fetch@1.1.0 OK for: protobufjs@6.11.4 want: ^1.1.0
+81 silly placeDep ROOT @protobufjs/float@1.0.2 OK for: protobufjs@6.11.4 want: ^1.0.2
+82 silly placeDep ROOT @protobufjs/inquire@1.1.0 OK for: protobufjs@6.11.4 want: ^1.1.0
+83 silly placeDep ROOT @protobufjs/path@1.1.2 OK for: protobufjs@6.11.4 want: ^1.1.2
+84 silly placeDep ROOT @protobufjs/pool@1.1.0 OK for: protobufjs@6.11.4 want: ^1.1.0
+85 silly placeDep ROOT @protobufjs/utf8@1.1.0 OK for: protobufjs@6.11.4 want: ^1.1.0
+86 silly placeDep ROOT @types/long@4.0.2 OK for: protobufjs@6.11.4 want: ^4.0.1
+87 silly placeDep ROOT @types/node@22.15.19 OK for: protobufjs@6.11.4 want: >=13.7.0
+88 silly placeDep ROOT long@4.0.0 OK for: protobufjs@6.11.4 want: ^4.0.0
+89 silly fetch manifest undici-types@~6.21.0
+90 silly packumentCache full:https://registry.npmmirror.com/undici-types cache-miss
+91 http fetch GET 200 https://registry.npmmirror.com/undici-types 30ms (cache revalidated)
+92 silly packumentCache full:https://registry.npmmirror.com/undici-types set size:144961 disposed:false
+93 silly placeDep ROOT undici-types@6.21.0 OK for: @types/node@22.15.19 want: ~6.21.0
+94 silly reify mark retired [
+94 silly reify   'E:\\apwj\\cloudfunctions\\sendOrderNotification\\node_modules\\@types\\node'
+94 silly reify ]
+95 silly reify mark retired [
+95 silly reify   'E:\\apwj\\cloudfunctions\\sendOrderNotification\\node_modules\\long'
+95 silly reify ]
+96 silly reify mark retired [
+96 silly reify   'E:\\apwj\\cloudfunctions\\sendOrderNotification\\node_modules\\protobufjs'
+96 silly reify ]
+97 silly reify mark retired [
+97 silly reify   'E:\\apwj\\cloudfunctions\\sendOrderNotification\\node_modules\\wx-server-sdk'
+97 silly reify ]
+98 silly reify moves {
+98 silly reify   'E:\\apwj\\cloudfunctions\\sendOrderNotification\\node_modules\\@types\\node': 'E:\\apwj\\cloudfunctions\\sendOrderNotification\\node_modules\\@types\\.node-FFnIrrSf',
+98 silly reify   'E:\\apwj\\cloudfunctions\\sendOrderNotification\\node_modules\\long': 'E:\\apwj\\cloudfunctions\\sendOrderNotification\\node_modules\\.long-FULUYYKk',
+98 silly reify   'E:\\apwj\\cloudfunctions\\sendOrderNotification\\node_modules\\protobufjs': 'E:\\apwj\\cloudfunctions\\sendOrderNotification\\node_modules\\.protobufjs-wnWjhpmI',
+98 silly reify   'E:\\apwj\\cloudfunctions\\sendOrderNotification\\node_modules\\wx-server-sdk': 'E:\\apwj\\cloudfunctions\\sendOrderNotification\\node_modules\\.wx-server-sdk-G3xaQLkz'
+98 silly reify }
+99 silly audit bulk request {
+99 silly audit   '@cloudbase/database': [ '1.4.1' ],
+99 silly audit   '@cloudbase/node-sdk': [ '2.10.0' ],
+99 silly audit   axios: [ '0.21.4', '1.9.0' ],
+99 silly audit   '@cloudbase/signature-nodejs': [ '1.0.0-beta.0' ],
+99 silly audit   '@types/clone': [ '0.1.30' ],
+99 silly audit   agentkeepalive: [ '4.6.0' ],
+99 silly audit   ajv: [ '6.12.6' ],
+99 silly audit   asn1: [ '0.2.6' ],
+99 silly audit   'assert-plus': [ '1.0.0' ],
+99 silly audit   asynckit: [ '0.4.0' ],
+99 silly audit   'aws-sign2': [ '0.7.0' ],
+99 silly audit   aws4: [ '1.13.2' ],
+99 silly audit   'form-data': [ '4.0.2', '2.3.3' ],
+99 silly audit   'base64-js': [ '1.5.1' ],
+99 silly audit   'bcrypt-pbkdf': [ '1.0.2' ],
+99 silly audit   'bignumber.js': [ '9.3.0' ],
+99 silly audit   bson: [ '4.7.2' ],
+99 silly audit   buffer: [ '5.7.1' ],
+99 silly audit   'buffer-equal-constant-time': [ '1.0.1' ],
+99 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+99 silly audit   'call-bound': [ '1.0.4' ],
+99 silly audit   caseless: [ '0.12.0' ],
+99 silly audit   clone: [ '2.1.2' ],
+99 silly audit   'combined-stream': [ '1.0.8' ],
+99 silly audit   'core-util-is': [ '1.0.2' ],
+99 silly audit   dashdash: [ '1.14.1' ],
+99 silly audit   'delayed-stream': [ '1.0.0' ],
+99 silly audit   'dunder-proto': [ '1.0.1' ],
+99 silly audit   'ecc-jsbn': [ '0.1.2' ],
+99 silly audit   'ecdsa-sig-formatter': [ '1.0.11' ],
+99 silly audit   'es-define-property': [ '1.0.1' ],
+99 silly audit   'es-errors': [ '1.3.0' ],
+99 silly audit   'es-object-atoms': [ '1.1.1' ],
+99 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+99 silly audit   extend: [ '3.0.2' ],
+99 silly audit   extsprintf: [ '1.3.0' ],
+99 silly audit   'fast-deep-equal': [ '3.1.3' ],
+99 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+99 silly audit   'follow-redirects': [ '1.15.9' ],
+99 silly audit   'forever-agent': [ '0.6.1' ],
+99 silly audit   'function-bind': [ '1.1.2' ],
+99 silly audit   'get-intrinsic': [ '1.3.0' ],
+99 silly audit   'get-proto': [ '1.0.1' ],
+99 silly audit   getpass: [ '0.1.7' ],
+99 silly audit   gopd: [ '1.2.0' ],
+99 silly audit   'har-schema': [ '2.0.0' ],
+99 silly audit   'har-validator': [ '5.1.5' ],
+99 silly audit   'has-symbols': [ '1.1.0' ],
+99 silly audit   'has-tostringtag': [ '1.0.2' ],
+99 silly audit   hasown: [ '2.0.2' ],
+99 silly audit   'http-signature': [ '1.2.0' ],
+99 silly audit   'humanize-ms': [ '1.2.1' ],
+99 silly audit   ieee754: [ '1.2.1' ],
+99 silly audit   'is-stream': [ '2.0.1' ],
+99 silly audit   'is-typedarray': [ '1.0.0' ],
+99 silly audit   isstream: [ '0.1.2' ],
+99 silly audit   jsbn: [ '0.1.1' ],
+99 silly audit   'json-bigint': [ '1.0.0' ],
+99 silly audit   'json-schema': [ '0.4.0' ],
+99 silly audit   'json-schema-traverse': [ '0.4.1' ],
+99 silly audit   'json-stringify-safe': [ '5.0.1' ],
+99 silly audit   jsonwebtoken: [ '8.5.1' ],
+99 silly audit   jsprim: [ '1.4.2' ],
+99 silly audit   jwa: [ '1.4.2' ],
+99 silly audit   jws: [ '3.2.2' ],
+99 silly audit   'lodash.clonedeep': [ '4.5.0' ],
+99 silly audit   'lodash.includes': [ '4.3.0' ],
+99 silly audit   'lodash.isboolean': [ '3.0.3' ],
+99 silly audit   'lodash.isinteger': [ '4.0.4' ],
+99 silly audit   'lodash.isnumber': [ '3.0.3' ],
+99 silly audit   'lodash.isplainobject': [ '4.0.6' ],
+99 silly audit   'lodash.isstring': [ '4.0.1' ],
+99 silly audit   'lodash.once': [ '4.1.1' ],
+99 silly audit   'lodash.set': [ '4.3.2' ],
+99 silly audit   'lodash.unset': [ '4.5.2' ],
+99 silly audit   'math-intrinsics': [ '1.1.0' ],
+99 silly audit   'mime-db': [ '1.52.0' ],
+99 silly audit   'mime-types': [ '2.1.35' ],
+99 silly audit   ms: [ '2.1.3' ],
+99 silly audit   'oauth-sign': [ '0.9.0' ],
+99 silly audit   'object-inspect': [ '1.13.4' ],
+99 silly audit   'performance-now': [ '2.1.0' ],
+99 silly audit   'proxy-from-env': [ '1.1.0' ],
+99 silly audit   psl: [ '1.15.0' ],
+99 silly audit   punycode: [ '2.3.1', '1.4.1' ],
+99 silly audit   qs: [ '6.5.3', '6.14.0' ],
+99 silly audit   request: [ '2.88.2' ],
+99 silly audit   retry: [ '0.13.1' ],
+99 silly audit   'safe-buffer': [ '5.2.1' ],
+99 silly audit   'safer-buffer': [ '2.1.2' ],
+99 silly audit   sax: [ '1.4.1' ],
+99 silly audit   semver: [ '5.7.2' ],
+99 silly audit   'side-channel': [ '1.1.0' ],
+99 silly audit   'side-channel-list': [ '1.0.0' ],
+99 silly audit   'side-channel-map': [ '1.0.1' ],
+99 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+99 silly audit   sshpk: [ '1.18.0' ],
+99 silly audit   'tough-cookie': [ '2.5.0' ],
+99 silly audit   tslib: [ '1.14.1' ],
+99 silly audit   'tunnel-agent': [ '0.6.0' ],
+99 silly audit   tweetnacl: [ '0.14.5' ],
+99 silly audit   'uri-js': [ '4.4.1' ],
+99 silly audit   url: [ '0.11.4' ],
+99 silly audit   uuid: [ '3.4.0' ],
+99 silly audit   verror: [ '1.10.0' ],
+99 silly audit   xml2js: [ '0.5.0' ],
+99 silly audit   xmlbuilder: [ '11.0.1' ],
+99 silly audit   'wx-server-sdk': [ '2.7.2' ],
+99 silly audit   protobufjs: [ '6.11.4' ],
+99 silly audit   '@protobufjs/aspromise': [ '1.1.2' ],
+99 silly audit   '@protobufjs/base64': [ '1.1.2' ],
+99 silly audit   '@protobufjs/codegen': [ '2.0.4' ],
+99 silly audit   '@protobufjs/eventemitter': [ '1.1.0' ],
+99 silly audit   '@protobufjs/fetch': [ '1.1.0' ],
+99 silly audit   '@protobufjs/float': [ '1.0.2' ],
+99 silly audit   '@protobufjs/inquire': [ '1.1.0' ],
+99 silly audit   '@protobufjs/path': [ '1.1.2' ],
+99 silly audit   '@protobufjs/pool': [ '1.1.0' ],
+99 silly audit   '@protobufjs/utf8': [ '1.1.0' ],
+99 silly audit   '@types/long': [ '4.0.2' ],
+99 silly audit   '@types/node': [ '22.15.19' ],
+99 silly audit   long: [ '4.0.0' ],
+99 silly audit   'undici-types': [ '6.21.0' ]
+99 silly audit }
+100 silly tarball no local data for @types/long@https://registry.npmmirror.com/@types/long/-/long-4.0.2.tgz. Extracting by manifest.
+101 silly tarball no local data for wx-server-sdk@https://registry.npmmirror.com/wx-server-sdk/-/wx-server-sdk-2.7.2.tgz. Extracting by manifest.
+102 silly tarball no local data for protobufjs@https://registry.npmmirror.com/protobufjs/-/protobufjs-6.11.4.tgz. Extracting by manifest.
+103 silly tarball no local data for long@https://registry.npmmirror.com/long/-/long-4.0.0.tgz. Extracting by manifest.
+104 silly tarball no local data for @types/node@https://registry.npmmirror.com/@types/node/-/node-22.15.19.tgz. Extracting by manifest.
+105 http fetch POST 404 https://registry.npmmirror.com/-/npm/v1/security/advisories/bulk 26ms
+106 silly audit bulk request failed [object Object]
+107 http fetch POST 404 https://registry.npmmirror.com/-/npm/v1/security/audits/quick 17ms
+108 verbose audit error HttpErrorGeneral: 404 Not Found - POST https://registry.npmmirror.com/-/npm/v1/security/audits/quick - [NOT_IMPLEMENTED] /-/npm/v1/security/* not implemented yet
+108 verbose audit error     at D:\nodejs\node_modules\npm\node_modules\npm-registry-fetch\lib\check-response.js:95:15
+108 verbose audit error     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+108 verbose audit error     at async [getReport] (D:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\audit-report.js:336:21)
+108 verbose audit error     at async AuditReport.run (D:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\audit-report.js:106:19) {
+108 verbose audit error   headers: [Object: null prototype] {
+108 verbose audit error     server: [ 'Tengine' ],
+108 verbose audit error     date: [ 'Tue, 20 May 2025 03:13:17 GMT' ],
+108 verbose audit error     'content-type': [ 'application/json' ],
+108 verbose audit error     'transfer-encoding': [ 'chunked' ],
+108 verbose audit error     connection: [ 'keep-alive' ],
+108 verbose audit error     'strict-transport-security': [ 'max-age=5184000' ],
+108 verbose audit error     via: [ 'kunlun11.cn5209[,404666]' ],
+108 verbose audit error     'timing-allow-origin': [ '*' ],
+108 verbose audit error     eagleid: [ '3adc341f17477107976922394e' ],
+108 verbose audit error     'x-fetch-attempts': [ '1' ]
+108 verbose audit error   },
+108 verbose audit error   statusCode: 404,
+108 verbose audit error   code: 'E404',
+108 verbose audit error   method: 'POST',
+108 verbose audit error   uri: 'https://registry.npmmirror.com/-/npm/v1/security/audits/quick',
+108 verbose audit error   body: {
+108 verbose audit error     error: '[NOT_IMPLEMENTED] /-/npm/v1/security/* not implemented yet'
+108 verbose audit error   },
+108 verbose audit error   pkgid: undefined
+108 verbose audit error }
+109 silly audit error [object Object]
+110 silly audit report null
+111 http fetch GET 200 https://cdn.npmmirror.com/packages/%40types/long/4.0.2/long-4.0.2.tgz 300ms (cache miss)
+112 http fetch GET 200 https://cdn.npmmirror.com/packages/long/4.0.0/long-4.0.0.tgz 349ms (cache miss)
+113 http fetch GET 200 https://cdn.npmmirror.com/packages/wx-server-sdk/2.7.2/wx-server-sdk-2.7.2.tgz 352ms (cache miss)
+114 http fetch GET 200 https://cdn.npmmirror.com/packages/%40types/node/22.15.19/node-22.15.19.tgz 689ms (cache miss)
+115 http fetch GET 200 https://cdn.npmmirror.com/packages/protobufjs/6.11.4/protobufjs-6.11.4.tgz 5488ms (cache miss)
+116 info run protobufjs@6.11.4 postinstall node_modules/protobufjs node scripts/postinstall
+117 info run protobufjs@6.11.4 postinstall { code: 0, signal: null }
+118 silly ADD node_modules/@types/long
+119 silly CHANGE node_modules/wx-server-sdk
+120 silly CHANGE node_modules/protobufjs
+121 silly CHANGE node_modules/long
+122 silly CHANGE node_modules/@types/node
+123 verbose cwd E:\apwj\cloudfunctions\sendOrderNotification
+124 verbose os Windows_NT 10.0.26100
+125 verbose node v22.11.0
+126 verbose npm  v10.9.0
+127 verbose exit 0
+128 info ok

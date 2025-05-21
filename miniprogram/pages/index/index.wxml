@@ -1,0 +1,109 @@
+<view class="container">
+  <!-- 顶部图片 -->
+  <image 
+    src="cloud://cloud1-8gjn6lhxe97aa6b5.636c-cloud1-8gjn6lhxe97aa6b5-1352151721/apwj.jpg" 
+    mode="widthFix" 
+    class="header-image"
+    alt="安平五金服务头部图片"
+    aria-label="安平五金服务"
+  ></image>
+  
+  <!-- 公告栏 - 优化版 -->
+  <view class="announcement-container hidden">
+    <view class="announcement-icon">📢</view>
+    <view class="announcement-marquee">
+      <view class="announcement-content" animation="{{marqueeAnimation}}">
+        <text decode="true">🏆</text> 安平五金竭诚为您服务！专业经营：电工电料、音响设备、电器维修、水电安装、五金批发 | <text decode="true">📍</text> 地址：洪泽区大庆南路民政局对面 | <text decode="true">☎️</text> 电话：13915157035
+      </view>
+    </view>
+  </view>
+  
+  <!-- 紧急联系卡片 -->
+  <view class="emergency-card">
+    <view class="card-title">
+      <text>如有急事请拨打</text>
+      <text class="phone-number" bindtap="makePhoneCall" data-phone="13915157035">13915157035</text>
+    <text>或</text>
+    <text class="phone-number" bindtap="makePhoneCall" data-phone="13951471056">13951471056</text>
+    </view>
+  </view>
+  
+  <!-- 服务地址 -->
+  <view class="form-item">
+    <map 
+      id="locationMap"
+      longitude="{{longitude}}" 
+      latitude="{{latitude}}"
+      scale="16"
+      markers="{{markers}}"
+      style="width: 100%; height: 200rpx; margin-bottom: 20rpx;"
+    ></map>
+    
+    <view class="location-container">
+      <view class="location-info" wx:if="{{locationName}}">
+        <view class="location-name">{{locationName}}</view>
+        <view class="detail-address">{{displayAddress}}</view>
+      </view>
+      
+      <button class="location-btn" bindtap="chooseLocation">
+        {{locationName ? '重新选址' : '请选择服务地址'}}
+      </button>
+      
+      <view class="form-title">详细地址</view>
+      <input 
+        placeholder="例：1栋1号楼101" 
+        value="{{inputAddress}}" 
+        data-field="inputAddress"
+        bindinput="handleInputChange"
+        aria-label="详细地址输入框"
+        confirm-type="done"
+      />
+    </view>
+  </view>
+  
+  <!-- 联系电话 -->
+  <view class="form-item">
+    <view class="form-title">联系电话</view>
+      <input 
+        placeholder="如需回电请填写手机号" 
+        type="number" 
+        maxlength="11" 
+        value="{{contactPhone}}" 
+        data-field="contactPhone"
+        bindinput="handleInputChange"
+        aria-label="联系电话输入框"
+        confirm-type="done"
+      />
+  </view>
+  
+  <!-- 问题拍摄 -->
+  <view class="form-item">
+    <view class="form-title">问题拍摄（最多3条）</view>
+    <view class="media-upload">
+      <view class="media-add-btn" bindtap="showMediaActionSheet">
+        <image src="/images/jia.png" class="add-icon"></image>
+      </view>
+      <block wx:for="{{mediaList}}" wx:key="url">
+        <view class="media-preview">
+          <image wx:if="{{item.type === 'image'}}" src="{{item.thumb}}" mode="aspectFill"></image>
+          <video wx:else src="{{item.url}}" controls></video>
+          <view class="delete-btn" data-index="{{index}}" bindtap="removeMedia"></view>
+        </view>
+      </block>
+    </view>
+  </view>
+  
+  <!-- 问题描述 -->
+  <view class="form-item">
+    <view class="form-title">问题描述</view>
+    <textarea 
+      placeholder="请详细描述问题（至少20字）" 
+      value="{{problemDescription}}" 
+      data-field="problemDescription"
+      bindinput="handleInputChange"
+    ></textarea>
+  </view>
+  
+  <!-- 提交按钮 -->
+  <button class="submit-btn" bindtap="submitForm">提交</button>
+</view>

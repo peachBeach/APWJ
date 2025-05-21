@@ -1,0 +1,10 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "安平五金服务",
+  "enablePullDownRefresh": false,
+  "backgroundColor": "#f7f7f7",
+  "componentFramework": "glass-easel",
+  "componentPlaceholder": {
+    "map": "view"
+  }
+}

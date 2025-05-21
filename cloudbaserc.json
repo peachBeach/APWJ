@@ -1,0 +1,38 @@
+{
+  "envId": "production-env-12345",
+  "functionRoot": "cloudfunctions",
+  "functions": [
+    {
+      "name": "httpRequest",
+      "timeout": 20,
+      "envVariables": {}
+    },
+    {
+      "name": "getWechatToken",
+      "timeout": 20,
+      "envVariables": {
+        "WX_APPID": "",
+        "WX_SECRET": ""
+      }
+    },
+    {
+      "name": "sendOrderNotification",
+      "timeout": 20,
+      "envVariables": {
+        "WX_TEMPLATE_ID": "k9hnHhUXfcsSj1CheJJhmsIWVJc31Z2XwzM80E5LfXo"
+      }
+    },
+    {
+      "name": "receiveMessage",
+      "timeout": 20,
+      "envVariables": {},
+      "triggers": [
+        {
+          "name": "messageTrigger",
+          "type": "timer",
+          "config": "0 0 * * * * *"
+        }
+      ]
+    }
+  ]
+}

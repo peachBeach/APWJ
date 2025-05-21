@@ -1,0 +1,467 @@
+/* 基础样式 */
+.container {
+  padding: 0;
+  background: #f7f7f7;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* 页面标题样式 */
+.page-header {
+  background-color: #1989fa;
+  color: white;
+  padding: 20rpx;
+  text-align: center;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+/* 新增确认弹窗样式 */
+.confirm-dialog {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.confirm-title {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 15px 10px;
+  text-align: center;
+}
+
+.confirm-content {
+  padding: 0 20px 20px;
+  font-size: 15px;
+  color: #666;
+}
+
+.confirm-buttons {
+  display: flex;
+  border-top: 1px solid #f5f5f5;
+}
+
+.confirm-button {
+  flex: 1;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+}
+
+.confirm-cancel {
+  color: #1989fa;
+  border-right: 1px solid #f5f5f5;
+}
+
+.confirm-submit {
+  color: #999;
+  background-color: #f5f5f5;
+}
+
+.confirm-submit.active {
+  color: #fff;
+  background-color: #1989fa;
+}
+.header-image {
+  width: 100%;
+}
+
+.emergency-card {
+  background: #fff;
+  margin: 0;
+  padding: 30rpx;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
+.phone-numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 紧急联系电话样式 */
+.emergency-card .phone-number {
+  color: #e74c3c !important;
+  font-size: 32rpx !important;
+  font-weight: bold !important;
+  padding: 0 10rpx !important;
+  margin: 0 !important;
+  display: inline !important;
+  white-space: nowrap !important;
+  line-height: 1.5 !important;
+}
+
+.form-item {
+  background: #fff;
+  border-radius: 0;
+  padding: 30rpx;
+  margin-bottom: 20rpx;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header-image {
+  width: 100%;
+}
+
+.emergency-card {
+  background: #fff;
+  margin: 0 20rpx 20rpx 20rpx;
+  padding: 30rpx;
+  border-radius: 16rpx;
+  box-shadow: 0 0 20rpx rgba(25, 137, 250, 0.3);
+  position: relative;
+  overflow: hidden;
+  width: calc(100% - 40rpx);
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+}
+
+.emergency-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6rpx;
+  background: #e74c3c;
+}
+
+.card-title {
+  font-size: 24rpx;
+  color: #666;
+  margin-bottom: 20rpx;
+}
+
+.phone-numbers {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 紧急联系电话样式 */
+.emergency-card .phone-number {
+  color: #e74c3c !important;
+  font-size: 32rpx !important;
+  font-weight: bold !important;
+  padding: 0 10rpx !important;
+  margin: 0 !important;
+  display: inline !important;
+  white-space: nowrap !important;
+  line-height: 1.5 !important;
+}
+
+.form-item {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 0 30rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 0 20rpx rgba(25, 137, 250, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.form-title {
+  font-size: 28rpx;
+  color: #333;
+  padding: 20rpx 0 10rpx 0;
+  font-weight: bold;
+}
+
+.required-mark {
+  color: #e74c3c;
+  font-size: 24rpx;
+  margin-left: 8rpx;
+  font-weight: normal;
+}
+
+.optional-mark {
+  color: #999;
+  font-size: 24rpx;
+  margin-left: 8rpx;
+  font-weight: normal;
+}
+
+.item-label {
+  font-size: 30rpx;
+  color: #333;
+  padding: 28rpx 0;
+  border-bottom: 1rpx solid #f5f5f5;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 28rpx 0;
+  font-size: 30rpx;
+}
+
+textarea {
+  height: 200rpx;
+}
+
+/* 紧急电话样式 */
+.phone-input {
+  display: flex;
+  align-items: center;
+}
+
+.call-btn {
+  margin-left: 20rpx;
+  font-size: 26rpx;
+  color: #07C160;
+  background: none;
+  border: 1rpx solid #07C160;
+  border-radius: 8rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0 20rpx;
+}
+
+/* 位置选择样式 */
+.location-preview {
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+  background: #f7f7f7;
+  border-radius: 8rpx;
+}
+
+.location-name {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.detail-address {
+  font-size: 26rpx;
+  color: #666;
+  margin-top: 10rpx;
+}
+
+.location-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.location-info {
+  width: 100%;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
+.location-name {
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.detail-address {
+  font-size: 26rpx;
+  color: #666;
+}
+
+.location-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #1989fa;
+  border: 2rpx solid #1989fa;
+  border-radius: 8rpx;
+  font-size: 30rpx;
+  padding: 0 30rpx;
+  height: 60rpx;
+  margin: 0 auto 20rpx;
+}
+
+.location-container .form-title {
+  text-align: left;
+  width: 100%;
+  padding: 20rpx 0 10rpx 0;
+}
+
+.location-container input {
+  width: 100%;
+  padding: 20rpx 0;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+/* 媒体上传样式 */
+.media-upload {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20rpx 0;
+}
+
+.media-add-btn {
+  width: 160rpx;
+  height: 160rpx;
+  border: 2rpx dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 8rpx;
+}
+
+.add-icon {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.media-preview {
+  width: 160rpx;
+  height: 160rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+  border-radius: 8rpx;
+  overflow: hidden;
+}
+
+.media-preview image,
+.media-preview video {
+  width: 100%;
+  height: 100%;
+}
+
+.delete-btn {
+  position: absolute;
+  right: 8rpx;
+  top: 8rpx;
+  width: 40rpx;
+  height: 40rpx;
+  z-index: 1;
+  background: rgba(255, 77, 79, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2rpx 6rpx rgba(0,0,0,0.2);
+  transition: all 0.2s ease;
+}
+
+.delete-btn::before {
+  content: "×";
+  font-size: 28rpx;
+  color: white;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.delete-btn:active {
+  transform: scale(0.9);
+  background: rgba(255, 77, 79, 1);
+}
+
+/* 按钮统一样式 */
+.button-style {
+  background: #1989fa;
+  color: white;
+  text-align: center;
+  border-radius: 40rpx;
+  font-size: 32rpx;
+  border: none;
+}
+
+/* 提交按钮 */
+.phone-btn {
+  background: #1989fa;
+  color: white;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  border-radius: 8rpx;
+  margin: 0;
+}
+
+.hidden-btn {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.submit-btn {
+  background: #1989fa;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88rpx;
+  border-radius: 44rpx;
+  font-size: 32rpx;
+  margin: 30rpx 0;
+  width: 100%;
+}
+
+/* 公告栏容器 */
+.announcement-container {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 20rpx 24rpx;
+  margin: 20rpx auto;
+  width: 88%;
+  border-radius: 12rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.1);
+  border-left: 6rpx solid #1989fa;
+  overflow: hidden;
+}
+
+/* 隐藏公告栏 */
+.announcement-container.hidden {
+  display: none;
+}
+
+/* 公告图标 */
+.announcement-icon {
+  font-size: 36rpx;
+  margin-right: 20rpx;
+  color: #ff5722;
+  animation: pulse 2s infinite;
+}
+
+
+
+/* 跑马灯容器 */
+.announcement-marquee {
+  flex: 1;
+  height: 80rpx;
+  overflow: hidden;
+}
+
+/* 公告内容 */
+.announcement-content {
+  white-space: nowrap;
+  font-size: 28rpx;
+  color: #333;
+  line-height: 80rpx;
+  display: inline-block;
+}
+
+
+
+/* 图标脉冲动画 */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+

@@ -1,0 +1,215 @@
+
+
+/* 日期筛选样式 - 始终固定 */
+.date-filter {
+  display: flex;
+  align-items: center;
+  padding: 10rpx 20rpx;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: 1rpx solid #eee;
+}
+
+.date-picker-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.date-picker {
+  display: flex;
+  align-items: center;
+  padding: 6rpx 15rpx;
+  background: #f2f2f2;
+  border-radius: 30rpx;
+  font-size: 24rpx;
+}
+
+.date-separator {
+  margin: 0 8rpx;
+  color: #666;
+  font-size: 24rpx;
+}
+
+.confirm-btn {
+  margin-left: 15rpx;
+  background: #1989fa;
+  color: white;
+  border-radius: 30rpx;
+  padding: 0 20rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 24rpx;
+}
+
+/* 订单标签栏 */
+.order-tabs {
+  display: flex;
+  padding: 20rpx 0;
+  background: #fff;
+  border-bottom: 1rpx solid #eee;
+  position: fixed;
+  top: 70rpx; /* 日期栏高度70rpx */
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.tab-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx 0;
+  position: relative;
+}
+
+.tab-item.selected {
+  background: rgba(0,0,0,0.1);
+}
+
+.tab-item image {
+  width: 60rpx;
+  height: 60rpx;
+  margin-bottom: 10rpx;
+}
+
+.tab-item text {
+  font-size: 24rpx;
+  color: #333;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  background: #f56c6c;
+  color: #fff;
+  border-radius: 50%;
+  width: 36rpx;
+  height: 36rpx;
+  font-size: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 订单列表 */
+.order-list {
+  padding: 20rpx 20rpx 0;
+  margin-top: 220rpx; /* 进一步增加上边距确保不被遮挡 */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.order-item {
+  background: #fff;
+  border-radius: 8rpx;
+  padding: 20rpx;
+  margin: 0 0 20rpx 0;
+  box-shadow: 0 0 20rpx rgba(25, 137, 250, 0.3);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.order-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6rpx;
+  background: var(--status-color, #1989fa);
+  border-radius: 0 6rpx 6rpx 0;
+}
+
+.order-item.status-0::before,
+.order-item.status-0 .status,
+.order-item.status-0 .order-content text:nth-child(1) {
+  --status-color: #FF9500;
+}
+
+.order-item.status-1::before,
+.order-item.status-1 .status,
+.order-item.status-1 .order-content text:nth-child(1) {
+  --status-color: #1989fa;
+}
+
+.order-item.status-2::before,
+.order-item.status-2 .status,
+.order-item.status-2 .order-content text:nth-child(1) {
+  --status-color: #07C160;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+  font-size: 28rpx;
+  position: relative;
+}
+
+.new-badge {
+  position: absolute;
+  right: 10rpx;
+  top: 10rpx;
+  width: 16rpx;
+  height: 16rpx;
+  background: #f56c6c;
+  border-radius: 50%;
+  border: 2rpx solid #fff;
+  box-shadow: 0 0 4rpx rgba(0,0,0,0.2);
+}
+
+.status {
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+  font-size: 26rpx;
+  font-weight: 500;
+  color: var(--status-color, #1989fa);
+  text-transform: uppercase;
+}
+
+.order-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 26rpx;
+}
+
+.order-content text:nth-child(1) {
+  color: var(--status-color, #1989fa);
+  font-weight: 500;
+}
+
+.order-content text:nth-child(2) {
+  color: #666;
+}
+
+.order-content text {
+  margin-bottom: 10rpx;
+}
+
+.empty-tip {
+  text-align: center;
+  padding: 100rpx 0;
+  color: #909399;
+  font-size: 28rpx;
+}
+
+/* 已取消状态样式 */
+.order-item.status-3::before {
+  background: #f5222d;
+}
+
+.order-item.status-3 .status,
+.order-item.status-3 .order-content text:nth-child(1) {
+  color: #f5222d;
+}

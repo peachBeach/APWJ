@@ -1,0 +1,225 @@
+0 verbose cli D:\nodejs\node.exe D:\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.0
+2 info using node@v22.11.0
+3 silly config load:file:D:\nodejs\node_modules\npm\npmrc
+4 silly config load:file:E:\apwj\cloudfunctions\sendOrderNotification\.npmrc
+5 silly config load:file:C:\Users\36402\.npmrc
+6 silly config load:file:D:\nodejs\node_global\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install"
+9 verbose logfile logs-max:10 dir:E:\apwj\cloudfunctions\sendOrderNotification\.npm-cache\_logs\2025-05-18T08_39_34_411Z-
+10 verbose logfile E:\apwj\cloudfunctions\sendOrderNotification\.npm-cache\_logs\2025-05-18T08_39_34_411Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly idealTree buildDeps
+14 silly fetch manifest axios@^1.6.7
+15 silly packumentCache full:https://registry.npmmirror.com/axios cache-miss
+16 http fetch GET 200 https://registry.npmmirror.com/axios 414ms (cache revalidated)
+17 silly packumentCache full:https://registry.npmmirror.com/axios set size:644472 disposed:false
+18 silly placeDep ROOT axios@1.9.0 REPLACE for: send-order-notification@1.0.0 want: ^1.6.7
+19 silly fetch manifest form-data@^4.0.0
+20 silly packumentCache full:https://registry.npmmirror.com/form-data cache-miss
+21 silly fetch manifest proxy-from-env@^1.1.0
+22 silly packumentCache full:https://registry.npmmirror.com/proxy-from-env cache-miss
+23 http fetch GET 200 https://registry.npmmirror.com/proxy-from-env 73ms (cache miss)
+24 silly packumentCache full:https://registry.npmmirror.com/proxy-from-env set size:4747 disposed:false
+25 http fetch GET 200 https://registry.npmmirror.com/form-data 131ms (cache revalidated)
+26 silly packumentCache full:https://registry.npmmirror.com/form-data set size:119530 disposed:false
+27 silly fetch manifest axios@^0.21.1
+28 silly packumentCache full:https://registry.npmmirror.com/axios cache-hit
+29 silly placeDep node_modules/@cloudbase/node-sdk axios@0.21.4 OK for: @cloudbase/node-sdk@2.10.0 want: ^0.21.1
+30 silly placeDep node_modules/axios form-data@4.0.2 OK for: axios@1.9.0 want: ^4.0.0
+31 silly placeDep ROOT proxy-from-env@1.1.0 OK for: axios@1.9.0 want: ^1.1.0
+32 silly fetch manifest es-set-tostringtag@^2.1.0
+33 silly packumentCache full:https://registry.npmmirror.com/es-set-tostringtag cache-miss
+34 http fetch GET 200 https://registry.npmmirror.com/es-set-tostringtag 61ms (cache miss)
+35 silly packumentCache full:https://registry.npmmirror.com/es-set-tostringtag set size:6558 disposed:false
+36 silly placeDep ROOT es-set-tostringtag@2.1.0 OK for: form-data@4.0.2 want: ^2.1.0
+37 silly fetch manifest has-tostringtag@^1.0.2
+38 silly packumentCache full:https://registry.npmmirror.com/has-tostringtag cache-miss
+39 http fetch GET 200 https://registry.npmmirror.com/has-tostringtag 46ms (cache miss)
+40 silly packumentCache full:https://registry.npmmirror.com/has-tostringtag set size:3448 disposed:false
+41 silly placeDep ROOT has-tostringtag@1.0.2 OK for: es-set-tostringtag@2.1.0 want: ^1.0.2
+42 silly reify mark retired [
+42 silly reify   'E:\\apwj\\cloudfunctions\\sendOrderNotification\\node_modules\\axios'
+42 silly reify ]
+43 silly reify moves {
+43 silly reify   'E:\\apwj\\cloudfunctions\\sendOrderNotification\\node_modules\\axios': 'E:\\apwj\\cloudfunctions\\sendOrderNotification\\node_modules\\.axios-jubUc1jc'
+43 silly reify }
+44 silly audit bulk request {
+44 silly audit   '@cloudbase/database': [ '1.4.1' ],
+44 silly audit   '@cloudbase/node-sdk': [ '2.10.0' ],
+44 silly audit   '@cloudbase/signature-nodejs': [ '1.0.0-beta.0' ],
+44 silly audit   '@protobufjs/aspromise': [ '1.1.2' ],
+44 silly audit   '@protobufjs/base64': [ '1.1.2' ],
+44 silly audit   '@protobufjs/codegen': [ '2.0.4' ],
+44 silly audit   '@protobufjs/eventemitter': [ '1.1.0' ],
+44 silly audit   '@protobufjs/fetch': [ '1.1.0' ],
+44 silly audit   '@protobufjs/float': [ '1.0.2' ],
+44 silly audit   '@protobufjs/inquire': [ '1.1.0' ],
+44 silly audit   '@protobufjs/path': [ '1.1.2' ],
+44 silly audit   '@protobufjs/pool': [ '1.1.0' ],
+44 silly audit   '@protobufjs/utf8': [ '1.1.0' ],
+44 silly audit   '@types/clone': [ '0.1.30' ],
+44 silly audit   '@types/node': [ '22.15.18' ],
+44 silly audit   agentkeepalive: [ '4.6.0' ],
+44 silly audit   ajv: [ '6.12.6' ],
+44 silly audit   asn1: [ '0.2.6' ],
+44 silly audit   'assert-plus': [ '1.0.0' ],
+44 silly audit   asynckit: [ '0.4.0' ],
+44 silly audit   'aws-sign2': [ '0.7.0' ],
+44 silly audit   aws4: [ '1.13.2' ],
+44 silly audit   'base64-js': [ '1.5.1' ],
+44 silly audit   'bcrypt-pbkdf': [ '1.0.2' ],
+44 silly audit   'bignumber.js': [ '9.3.0' ],
+44 silly audit   bson: [ '4.7.2' ],
+44 silly audit   buffer: [ '5.7.1' ],
+44 silly audit   'buffer-equal-constant-time': [ '1.0.1' ],
+44 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+44 silly audit   'call-bound': [ '1.0.4' ],
+44 silly audit   caseless: [ '0.12.0' ],
+44 silly audit   clone: [ '2.1.2' ],
+44 silly audit   'combined-stream': [ '1.0.8' ],
+44 silly audit   'core-util-is': [ '1.0.2' ],
+44 silly audit   dashdash: [ '1.14.1' ],
+44 silly audit   'delayed-stream': [ '1.0.0' ],
+44 silly audit   'dunder-proto': [ '1.0.1' ],
+44 silly audit   'ecc-jsbn': [ '0.1.2' ],
+44 silly audit   'ecdsa-sig-formatter': [ '1.0.11' ],
+44 silly audit   'es-define-property': [ '1.0.1' ],
+44 silly audit   'es-errors': [ '1.3.0' ],
+44 silly audit   'es-object-atoms': [ '1.1.1' ],
+44 silly audit   extend: [ '3.0.2' ],
+44 silly audit   extsprintf: [ '1.3.0' ],
+44 silly audit   'fast-deep-equal': [ '3.1.3' ],
+44 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+44 silly audit   'follow-redirects': [ '1.15.9' ],
+44 silly audit   'forever-agent': [ '0.6.1' ],
+44 silly audit   'form-data': [ '2.3.3', '4.0.2' ],
+44 silly audit   'function-bind': [ '1.1.2' ],
+44 silly audit   'get-intrinsic': [ '1.3.0' ],
+44 silly audit   'get-proto': [ '1.0.1' ],
+44 silly audit   getpass: [ '0.1.7' ],
+44 silly audit   gopd: [ '1.2.0' ],
+44 silly audit   'har-schema': [ '2.0.0' ],
+44 silly audit   'har-validator': [ '5.1.5' ],
+44 silly audit   'has-symbols': [ '1.1.0' ],
+44 silly audit   hasown: [ '2.0.2' ],
+44 silly audit   'http-signature': [ '1.2.0' ],
+44 silly audit   'humanize-ms': [ '1.2.1' ],
+44 silly audit   ieee754: [ '1.2.1' ],
+44 silly audit   'is-stream': [ '2.0.1' ],
+44 silly audit   'is-typedarray': [ '1.0.0' ],
+44 silly audit   isstream: [ '0.1.2' ],
+44 silly audit   jsbn: [ '0.1.1' ],
+44 silly audit   'json-bigint': [ '1.0.0' ],
+44 silly audit   'json-schema': [ '0.4.0' ],
+44 silly audit   'json-schema-traverse': [ '0.4.1' ],
+44 silly audit   'json-stringify-safe': [ '5.0.1' ],
+44 silly audit   jsonwebtoken: [ '8.5.1' ],
+44 silly audit   jsprim: [ '1.4.2' ],
+44 silly audit   jwa: [ '1.4.2' ],
+44 silly audit   jws: [ '3.2.2' ],
+44 silly audit   'lodash.clonedeep': [ '4.5.0' ],
+44 silly audit   'lodash.includes': [ '4.3.0' ],
+44 silly audit   'lodash.isboolean': [ '3.0.3' ],
+44 silly audit   'lodash.isinteger': [ '4.0.4' ],
+44 silly audit   'lodash.isnumber': [ '3.0.3' ],
+44 silly audit   'lodash.isplainobject': [ '4.0.6' ],
+44 silly audit   'lodash.isstring': [ '4.0.1' ],
+44 silly audit   'lodash.once': [ '4.1.1' ],
+44 silly audit   'lodash.set': [ '4.3.2' ],
+44 silly audit   'lodash.unset': [ '4.5.2' ],
+44 silly audit   long: [ '5.3.2' ],
+44 silly audit   'math-intrinsics': [ '1.1.0' ],
+44 silly audit   'mime-db': [ '1.52.0' ],
+44 silly audit   'mime-types': [ '2.1.35' ],
+44 silly audit   ms: [ '2.1.3' ],
+44 silly audit   'oauth-sign': [ '0.9.0' ],
+44 silly audit   'object-inspect': [ '1.13.4' ],
+44 silly audit   'performance-now': [ '2.1.0' ],
+44 silly audit   protobufjs: [ '7.5.2' ],
+44 silly audit   psl: [ '1.15.0' ],
+44 silly audit   punycode: [ '2.3.1', '1.4.1' ],
+44 silly audit   qs: [ '6.5.3', '6.14.0' ],
+44 silly audit   request: [ '2.88.2' ],
+44 silly audit   retry: [ '0.13.1' ],
+44 silly audit   'safe-buffer': [ '5.2.1' ],
+44 silly audit   'safer-buffer': [ '2.1.2' ],
+44 silly audit   sax: [ '1.4.1' ],
+44 silly audit   semver: [ '5.7.2' ],
+44 silly audit   'side-channel': [ '1.1.0' ],
+44 silly audit   'side-channel-list': [ '1.0.0' ],
+44 silly audit   'side-channel-map': [ '1.0.1' ],
+44 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+44 silly audit   sshpk: [ '1.18.0' ],
+44 silly audit   'tough-cookie': [ '2.5.0' ],
+44 silly audit   tslib: [ '1.14.1' ],
+44 silly audit   'tunnel-agent': [ '0.6.0' ],
+44 silly audit   tweetnacl: [ '0.14.5' ],
+44 silly audit   'undici-types': [ '6.21.0' ],
+44 silly audit   'uri-js': [ '4.4.1' ],
+44 silly audit   url: [ '0.11.4' ],
+44 silly audit   uuid: [ '3.4.0' ],
+44 silly audit   verror: [ '1.10.0' ],
+44 silly audit   'wx-server-sdk': [ '3.0.1' ],
+44 silly audit   xml2js: [ '0.5.0' ],
+44 silly audit   xmlbuilder: [ '11.0.1' ],
+44 silly audit   axios: [ '1.9.0', '0.21.4' ],
+44 silly audit   'proxy-from-env': [ '1.1.0' ],
+44 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+44 silly audit   'has-tostringtag': [ '1.0.2' ]
+44 silly audit }
+45 silly tarball no local data for has-tostringtag@https://registry.npmmirror.com/has-tostringtag/-/has-tostringtag-1.0.2.tgz. Extracting by manifest.
+46 silly tarball no local data for es-set-tostringtag@https://registry.npmmirror.com/es-set-tostringtag/-/es-set-tostringtag-2.1.0.tgz. Extracting by manifest.
+47 silly tarball no local data for axios@https://registry.npmmirror.com/axios/-/axios-1.9.0.tgz. Extracting by manifest.
+48 silly tarball no local data for proxy-from-env@https://registry.npmmirror.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz. Extracting by manifest.
+49 silly tarball no local data for form-data@https://registry.npmmirror.com/form-data/-/form-data-4.0.2.tgz. Extracting by manifest.
+50 http fetch POST 404 https://registry.npmmirror.com/-/npm/v1/security/advisories/bulk 52ms
+51 silly audit bulk request failed [object Object]
+52 http fetch POST 404 https://registry.npmmirror.com/-/npm/v1/security/audits/quick 53ms
+53 verbose audit error HttpErrorGeneral: 404 Not Found - POST https://registry.npmmirror.com/-/npm/v1/security/audits/quick - [NOT_IMPLEMENTED] /-/npm/v1/security/* not implemented yet
+53 verbose audit error     at D:\nodejs\node_modules\npm\node_modules\npm-registry-fetch\lib\check-response.js:95:15
+53 verbose audit error     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+53 verbose audit error     at async [getReport] (D:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\audit-report.js:336:21)
+53 verbose audit error     at async AuditReport.run (D:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\audit-report.js:106:19) {
+53 verbose audit error   headers: [Object: null prototype] {
+53 verbose audit error     server: [ 'Tengine' ],
+53 verbose audit error     date: [ 'Sun, 18 May 2025 08:39:39 GMT' ],
+53 verbose audit error     'content-type': [ 'application/json' ],
+53 verbose audit error     'transfer-encoding': [ 'chunked' ],
+53 verbose audit error     connection: [ 'keep-alive' ],
+53 verbose audit error     'strict-transport-security': [ 'max-age=5184000' ],
+53 verbose audit error     via: [ 'kunlun4.cn6425[,404666]' ],
+53 verbose audit error     'timing-allow-origin': [ '*' ],
+53 verbose audit error     eagleid: [ '3da0c00e17475575797366649e' ],
+53 verbose audit error     'x-fetch-attempts': [ '1' ]
+53 verbose audit error   },
+53 verbose audit error   statusCode: 404,
+53 verbose audit error   code: 'E404',
+53 verbose audit error   method: 'POST',
+53 verbose audit error   uri: 'https://registry.npmmirror.com/-/npm/v1/security/audits/quick',
+53 verbose audit error   body: {
+53 verbose audit error     error: '[NOT_IMPLEMENTED] /-/npm/v1/security/* not implemented yet'
+53 verbose audit error   },
+53 verbose audit error   pkgid: undefined
+53 verbose audit error }
+54 silly audit error [object Object]
+55 silly audit report null
+56 http fetch GET 200 https://cdn.npmmirror.com/packages/es-set-tostringtag/2.1.0/es-set-tostringtag-2.1.0.tgz 802ms (cache miss)
+57 http fetch GET 200 https://cdn.npmmirror.com/packages/has-tostringtag/1.0.2/has-tostringtag-1.0.2.tgz 817ms (cache miss)
+58 http fetch GET 200 https://cdn.npmmirror.com/packages/form-data/4.0.2/form-data-4.0.2.tgz 815ms (cache miss)
+59 http fetch GET 200 https://cdn.npmmirror.com/packages/proxy-from-env/1.1.0/proxy-from-env-1.1.0.tgz 888ms (cache miss)
+60 http fetch GET 200 https://cdn.npmmirror.com/packages/axios/1.9.0/axios-1.9.0.tgz 1956ms (cache miss)
+61 silly ADD node_modules/has-tostringtag
+62 silly ADD node_modules/es-set-tostringtag
+63 silly ADD node_modules/proxy-from-env
+64 silly CHANGE node_modules/axios
+65 silly ADD node_modules/axios/node_modules/form-data
+66 silly ADD node_modules/@cloudbase/node-sdk/node_modules/axios
+67 verbose cwd E:\apwj\cloudfunctions\sendOrderNotification
+68 verbose os Windows_NT 10.0.26100
+69 verbose node v22.11.0
+70 verbose npm  v10.9.0
+71 verbose exit 0
+72 info ok
