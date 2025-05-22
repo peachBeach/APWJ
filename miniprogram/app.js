@@ -21,11 +21,35 @@ App({
    * 完成云开发初始化、设备信息获取和匿名登录
    */
   onLaunch() {
+    // 获取平台信息
+    const systemInfo = wx.getSystemInfoSync();
+    this.globalData.platform = systemInfo.platform;
+    this.globalData.isPC = systemInfo.platform === 'windows' || systemInfo.platform === 'mac';
+    
+    // 错误处理函数
+    const handleError = (err) => {
+      console.error('全局错误捕获:', err);
+      if (err.message.includes('preloadContexts')) {
+        console.warn('预加载上下文不足，已降级处理');
+        if (this.globalData.isPC) {
+          console.info('PC端环境特殊处理');
+          // PC端特定处理逻辑
+        }
+      }
+    };
+
     // 初始化云开发环境
     try {
-      wx.cloud.init({
+      const initConfig = {
         env: 'cloud1-8gjn6lhxe97aa6b5'
-      });
+      };
+      
+      // PC端禁用部分功能
+      if (this.globalData.isPC) {
+        initConfig.traceUser = false;
+      }
+      
+      wx.cloud.init(initConfig);
       this.globalData.cloud = wx.cloud;
 
       // 增强版openid获取逻辑
@@ -52,7 +76,7 @@ App({
         this.showAuthModal();
       });
     } catch (err) {
-      console.error('云开发初始化失败:', err);
+      handleError(err);
     }
 
     // 获取设备信息（使用新API）

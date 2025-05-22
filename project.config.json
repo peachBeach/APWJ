@@ -17,7 +17,7 @@
     }
   },
   "compileType": "miniprogram",
-  "libVersion": "2.16.1",
+  "libVersion": "2.25.0",
   "appid": "wx58dfd4c9837663f4",
   "projectname": "repair-service",
   "miniprogramRoot": "miniprogram/",

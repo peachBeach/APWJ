@@ -193,9 +193,12 @@ exports.main = async (event, context) => {
   } catch (err) {
     // 错误处理
     console.error('订单提交失败:', err);
-    cloud.logger().error('订单创建失败', {
-      error: err.message,
-      stack: err.stack
+    cloud.logger().error({
+      message: '订单创建失败',
+      data: {
+        error: err.message,
+        stack: err.stack
+      }
     });
     
     return {

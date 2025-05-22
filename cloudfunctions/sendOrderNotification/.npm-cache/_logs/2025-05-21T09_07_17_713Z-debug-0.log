@@ -1,0 +1,114 @@
+0 verbose cli D:\nodejs\node.exe D:\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.0
+2 info using node@v22.11.0
+3 silly config load:file:D:\nodejs\node_modules\npm\npmrc
+4 silly config load:file:E:\apwj\cloudfunctions\sendOrderNotification\.npmrc
+5 silly config load:file:C:\Users\36402\.npmrc
+6 silly config load:file:D:\nodejs\node_global\etc\npmrc
+7 verbose title npm exec cross-env NODE_ENV=development node -e const cloud = require('wx-server-sdk'); cloud.init({env: 'cloud1-8gjn6lhxe97aa6b5'}); cloud.database().collection('orders').limit(1).get().then(res => console.log(JSON.stringify(res.data[0] || {}, null, 2))).catch(console.error)
+8 verbose argv "exec" "--" "cross-env" "NODE_ENV=development" "node" "-e" "const cloud = require('wx-server-sdk'); cloud.init({env: 'cloud1-8gjn6lhxe97aa6b5'}); cloud.database().collection('orders').limit(1).get().then(res => console.log(JSON.stringify(res.data[0] || {}, null, 2))).catch(console.error)"
+9 verbose logfile logs-max:10 dir:E:\apwj\cloudfunctions\sendOrderNotification\.npm-cache\_logs\2025-05-21T09_07_17_713Z-
+10 verbose logfile E:\apwj\cloudfunctions\sendOrderNotification\.npm-cache\_logs\2025-05-21T09_07_17_713Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files
+13 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+14 http fetch GET 200 https://registry.npmmirror.com/cross-env 920ms (cache miss)
+15 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+16 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+17 silly idealTree buildDeps
+18 silly fetch manifest cross-env@7.0.3
+19 silly packumentCache full:https://registry.npmmirror.com/cross-env cache-miss
+20 http fetch GET 200 https://registry.npmmirror.com/cross-env 588ms (cache miss)
+21 silly packumentCache full:https://registry.npmmirror.com/cross-env set size:22511 disposed:false
+22 silly placeDep ROOT cross-env@7.0.3 OK for:  want: 7.0.3
+23 silly fetch manifest cross-spawn@^7.0.1
+24 silly packumentCache full:https://registry.npmmirror.com/cross-spawn cache-miss
+25 http fetch GET 200 https://registry.npmmirror.com/cross-spawn 72ms (cache miss)
+26 silly packumentCache full:https://registry.npmmirror.com/cross-spawn set size:19398 disposed:false
+27 silly placeDep ROOT cross-spawn@7.0.6 OK for: cross-env@7.0.3 want: ^7.0.1
+28 silly fetch manifest path-key@^3.1.0
+29 silly packumentCache full:https://registry.npmmirror.com/path-key cache-miss
+30 silly fetch manifest shebang-command@^2.0.0
+31 silly packumentCache full:https://registry.npmmirror.com/shebang-command cache-miss
+32 silly fetch manifest which@^2.0.1
+33 silly packumentCache full:https://registry.npmmirror.com/which cache-miss
+34 http fetch GET 200 https://registry.npmmirror.com/path-key 90ms (cache miss)
+35 silly packumentCache full:https://registry.npmmirror.com/path-key set size:3439 disposed:false
+36 http fetch GET 200 https://registry.npmmirror.com/shebang-command 314ms (cache miss)
+37 silly packumentCache full:https://registry.npmmirror.com/shebang-command set size:2106 disposed:false
+38 http fetch GET 200 https://registry.npmmirror.com/which 336ms (cache miss)
+39 silly packumentCache full:https://registry.npmmirror.com/which set size:13384 disposed:false
+40 silly placeDep ROOT path-key@3.1.1 OK for: cross-spawn@7.0.6 want: ^3.1.0
+41 silly placeDep ROOT shebang-command@2.0.0 OK for: cross-spawn@7.0.6 want: ^2.0.0
+42 silly placeDep ROOT which@2.0.2 OK for: cross-spawn@7.0.6 want: ^2.0.1
+43 silly fetch manifest shebang-regex@^3.0.0
+44 silly packumentCache full:https://registry.npmmirror.com/shebang-regex cache-miss
+45 silly fetch manifest isexe@^2.0.0
+46 silly packumentCache full:https://registry.npmmirror.com/isexe cache-miss
+47 http fetch GET 200 https://registry.npmmirror.com/shebang-regex 86ms (cache miss)
+48 silly packumentCache full:https://registry.npmmirror.com/shebang-regex set size:2417 disposed:false
+49 http fetch GET 200 https://registry.npmmirror.com/isexe 98ms (cache miss)
+50 silly packumentCache full:https://registry.npmmirror.com/isexe set size:4993 disposed:false
+51 silly placeDep ROOT shebang-regex@3.0.0 OK for: shebang-command@2.0.0 want: ^3.0.0
+52 silly placeDep ROOT isexe@2.0.0 OK for: which@2.0.2 want: ^2.0.0
+53 silly reify moves {}
+54 silly audit bulk request {
+54 silly audit   'cross-env': [ '7.0.3' ],
+54 silly audit   'cross-spawn': [ '7.0.6' ],
+54 silly audit   'path-key': [ '3.1.1' ],
+54 silly audit   'shebang-command': [ '2.0.0' ],
+54 silly audit   which: [ '2.0.2' ],
+54 silly audit   'shebang-regex': [ '3.0.0' ],
+54 silly audit   isexe: [ '2.0.0' ]
+54 silly audit }
+55 silly tarball no local data for which@https://registry.npmmirror.com/which/-/which-2.0.2.tgz. Extracting by manifest.
+56 silly tarball no local data for isexe@https://registry.npmmirror.com/isexe/-/isexe-2.0.0.tgz. Extracting by manifest.
+57 silly tarball no local data for shebang-regex@https://registry.npmmirror.com/shebang-regex/-/shebang-regex-3.0.0.tgz. Extracting by manifest.
+58 silly tarball no local data for path-key@https://registry.npmmirror.com/path-key/-/path-key-3.1.1.tgz. Extracting by manifest.
+59 silly tarball no local data for cross-spawn@https://registry.npmmirror.com/cross-spawn/-/cross-spawn-7.0.6.tgz. Extracting by manifest.
+60 silly tarball no local data for shebang-command@https://registry.npmmirror.com/shebang-command/-/shebang-command-2.0.0.tgz. Extracting by manifest.
+61 silly tarball no local data for cross-env@https://registry.npmmirror.com/cross-env/-/cross-env-7.0.3.tgz. Extracting by manifest.
+62 http fetch POST 404 https://registry.npmmirror.com/-/npm/v1/security/advisories/bulk 87ms
+63 silly audit bulk request failed [object Object]
+64 http fetch POST 404 https://registry.npmmirror.com/-/npm/v1/security/audits/quick 43ms
+65 verbose audit error HttpErrorGeneral: 404 Not Found - POST https://registry.npmmirror.com/-/npm/v1/security/audits/quick - [NOT_IMPLEMENTED] /-/npm/v1/security/* not implemented yet
+65 verbose audit error     at D:\nodejs\node_modules\npm\node_modules\npm-registry-fetch\lib\check-response.js:95:15
+65 verbose audit error     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+65 verbose audit error     at async [getReport] (D:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\audit-report.js:336:21)
+65 verbose audit error     at async AuditReport.run (D:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\audit-report.js:106:19) {
+65 verbose audit error   headers: [Object: null prototype] {
+65 verbose audit error     server: [ 'Tengine' ],
+65 verbose audit error     date: [ 'Wed, 21 May 2025 09:09:25 GMT' ],
+65 verbose audit error     'content-type': [ 'application/json' ],
+65 verbose audit error     'transfer-encoding': [ 'chunked' ],
+65 verbose audit error     connection: [ 'keep-alive' ],
+65 verbose audit error     'strict-transport-security': [ 'max-age=5184000' ],
+65 verbose audit error     via: [ 'kunlun13.cn5209[,404666]' ],
+65 verbose audit error     'timing-allow-origin': [ '*' ],
+65 verbose audit error     eagleid: [ '3adc342117478185654647619e' ],
+65 verbose audit error     'x-fetch-attempts': [ '1' ]
+65 verbose audit error   },
+65 verbose audit error   statusCode: 404,
+65 verbose audit error   code: 'E404',
+65 verbose audit error   method: 'POST',
+65 verbose audit error   uri: 'https://registry.npmmirror.com/-/npm/v1/security/audits/quick',
+65 verbose audit error   body: {
+65 verbose audit error     error: '[NOT_IMPLEMENTED] /-/npm/v1/security/* not implemented yet'
+65 verbose audit error   },
+65 verbose audit error   pkgid: undefined
+65 verbose audit error }
+66 silly audit error [object Object]
+67 silly audit report null
+68 http fetch GET 200 https://cdn.npmmirror.com/packages/which/2.0.2/which-2.0.2.tgz 959ms (cache miss)
+69 http fetch GET 200 https://cdn.npmmirror.com/packages/cross-env/7.0.3/cross-env-7.0.3.tgz 952ms (cache miss)
+70 http fetch GET 200 https://cdn.npmmirror.com/packages/shebang-command/2.0.0/shebang-command-2.0.0.tgz 965ms (cache miss)
+71 http fetch GET 200 https://cdn.npmmirror.com/packages/shebang-regex/3.0.0/shebang-regex-3.0.0.tgz 970ms (cache miss)
+72 http fetch GET 200 https://cdn.npmmirror.com/packages/path-key/3.1.1/path-key-3.1.1.tgz 975ms (cache miss)
+73 http fetch GET 200 https://cdn.npmmirror.com/packages/isexe/2.0.0/isexe-2.0.0.tgz 1005ms (cache miss)
+74 http fetch GET 200 https://cdn.npmmirror.com/packages/cross-spawn/7.0.6/cross-spawn-7.0.6.tgz 1016ms (cache miss)
+75 verbose cwd E:\apwj\cloudfunctions\sendOrderNotification
+76 verbose os Windows_NT 10.0.26100
+77 verbose node v22.11.0
+78 verbose npm  v10.9.0
+79 verbose exit 1
+80 verbose code 1

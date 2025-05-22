@@ -88,16 +88,20 @@ function formatTemplateData(type, data) {
   try {
     const formattedData = formatter(data);
     logger.info({
-      message: '格式化消息数据完成', 
-      type,
-      fields: Object.keys(formattedData)
+      message: '格式化消息数据完成',
+      data: {
+        type,
+        fields: Object.keys(formattedData)
+      }
     });
     return formattedData;
   } catch (error) {
     logger.error({
       message: '格式化消息数据失败',
-      type,
-      error: error.message
+      data: {
+        type,
+        error: error.message
+      }
     });
     throw error;
   }
@@ -114,15 +118,19 @@ async function sendSubscribeMessage(openid, templateId, data) {
     });
     logger.info({
       message: '发送订阅消息成功',
-      templateId,
-      openid: openid.slice(0, 3) + '...' + openid.slice(-3)
+      data: {
+        templateId,
+        openid: openid.slice(0, 3) + '...' + openid.slice(-3)
+      }
     });
     return result;
   } catch (error) {
     logger.error({
       message: '发送订阅消息失败',
-      templateId,
-      error: error.message
+      data: {
+        templateId,
+        error: error.message
+      }
     });
     throw error;
   }
@@ -182,8 +190,10 @@ async function getOrderInfo(orderId, data = {}) {
   } catch (error) {
     logger.error({
       message: '获取订单信息失败',
-      error: error.message,
-      stack: error.stack
+      data: {
+        error: error.message,
+        stack: error.stack
+      }
     });
     throw error;
   }
@@ -194,9 +204,11 @@ exports.main = async (event, context) => {
   const { type, orderId, data = {} } = event;
   logger.info({
       message: '收到发送通知请求',
-      type,
-      orderId,
-      dataKeys: Object.keys(data).filter(k => !k.includes('secret'))
+      data: {
+        type,
+        orderId,
+        dataKeys: Object.keys(data).filter(k => !k.includes('secret'))
+      }
     });
 
   try {
@@ -235,8 +247,10 @@ exports.main = async (event, context) => {
   } catch (error) {
     logger.error({
       message: '发送通知失败',
-      errorMessage: error.message,
-      errorStack: error.stack
+      data: {
+        errorMessage: error.message,
+        errorStack: error.stack
+      }
     });
     return {
       code: -1,

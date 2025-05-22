@@ -34,7 +34,7 @@ Page({
       id: 0,
       latitude: 33.2946,
       longitude: 118.8755,
-      iconPath: '/images/location.png',
+      iconPath: '/images/Location.png',
       width: 30,
       height: 30
     }],
@@ -45,92 +45,41 @@ Page({
   },
 
   onLoad() {
-    this.startMarqueeAnimation();
+    // 初始化核心功能
+    this.initCoreComponents();
   },
 
-  // 计算文字运动时间
-  calculateAnimationDuration() {
-    return new Promise((resolve) => {
-      const query = wx.createSelectorQuery();
-      query.select('.announcement-content').boundingClientRect();
-      query.select('.announcement-marquee').boundingClientRect();
-      query.exec(res => {
-        if (res[0] && res[1]) {
-          const textWidth = res[0].width;
-          const containerWidth = res[1].width;
-          // 根据宽度差计算动画时间 (100px/s的速度)
-          const duration = (textWidth + containerWidth) / 100;
-          this.setData({ animationDuration: duration }, () => resolve(duration));
-        }
-      });
-    });
+  onReady() {
+    // 确保基础资源加载完成
+    this.initCoreComponents();
   },
 
-  // 优化后的跑马灯动画
-  async startMarqueeAnimation() {
-    if (this.data.animationRunning) return;
-    
-    // 合并初始化状态设置
-    this.setData({ 
-      animationRunning: true,
-      marqueeAnimation: null 
-    });
-
-    const duration = await this.calculateAnimationDuration();
-    this.runOptimizedMarquee(duration);
+  initCoreComponents() {
+    // 初始化核心组件
+    this.initMapLocation();
   },
 
-  // 使用兼容的动画实现
-  runOptimizedMarquee(duration) {
-    const startTime = Date.now();
-    const distance = duration * 100;
-    let lastFrameTime = startTime;
-
-    // 兼容性处理
-    const raf = wx.requestAnimationFrame || function(callback) {
-      return setTimeout(callback, 16);
-    };
-    const caf = wx.cancelAnimationFrame || clearTimeout;
-
-    const animate = () => {
-      if (!this.data.animationRunning) return;
-
-      const now = Date.now();
-      const elapsed = (now - startTime) / 1000;
-      const progress = Math.min(elapsed / duration, 1);
-
-      if (progress >= 1) {
-        // 动画完成，重置并重新开始
-        this.setData({ marqueeAnimation: null }, () => {
-          setTimeout(() => this.runOptimizedMarquee(duration), 1000);
-        });
-        return;
-      }
-
-      // 限制帧率约60fps
-      if (now - lastFrameTime > 16) {
-        const translateX = -progress * distance;
-        const animation = wx.createAnimation({
-          duration: 16,
-          timingFunction: 'linear'
-        });
-        animation.translateX(translateX).step();
-        
-        this.setData({
-          marqueeAnimation: animation.export()
-        });
-        lastFrameTime = now;
-      }
-
-      this.animationId = raf(animate);
-    };
-
-    // 清除之前的动画
-    if (this.animationId) {
-      caf(this.animationId);
+  // 初始化地图位置
+  initMapLocation() {
+    if (this.data.latitude && this.data.longitude) {
+      // 已有位置数据，无需重新初始化
+      return;
     }
-    animate();
+    // 设置默认位置
+    this.setData({
+      latitude: 33.2946,
+      longitude: 118.8755,
+      markers: [{
+        id: 0,
+        latitude: 33.2946,
+        longitude: 118.8755,
+        iconPath: '/images/Location.png',
+        width: 30,
+        height: 30
+      }]
+    });
   },
+
 
   // 拨打紧急电话
   makePhoneCall(e) {
@@ -205,7 +154,7 @@ Page({
             id: 0,
             latitude: res.latitude,
             longitude: res.longitude,
-            iconPath: '/images/location.png',
+            iconPath: '/images/Location.png',
             width: 30,
             height: 30
           }]
@@ -284,11 +233,11 @@ Page({
   // 请求订阅消息授权
   async requestSubscription() {
     try {
+      // 每次最多请求3个模板ID，根据当前场景选择最相关的模板
       const tmplIds = [
         'd0HiMwqgQa3Qyi8M0Jb-8IoJklJhlf0j0opoOGfwjvk', // 订单创建成功通知
         'k9hnHhUXfcsSj1CheJJhmsIWVJc31Z2XwzM80E5LfXo', // 接单成功通知
-        'Tz_I8xLdJ-SrKwmBk3bY5QpvFbIkAQnVWcl9XnYigAA', // 订单完成通知
-        'Tz_I8xLdJ-SrKwmBk3bY5QpvFbIkAQnVWcl9XnYigAA'  // 订单取消通知
+        'q-et-4UMkENK1C1-dgFxkWlWZ3w4N9WMK779BQTdCKw'  // 订单完成通知
       ];
       
       const result = await wx.requestSubscribeMessage({

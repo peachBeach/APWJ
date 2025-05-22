@@ -8,16 +8,6 @@
     aria-label="安平五金服务"
   ></image>
   
-  <!-- 公告栏 - 优化版 -->
-  <view class="announcement-container hidden">
-    <view class="announcement-icon">📢</view>
-    <view class="announcement-marquee">
-      <view class="announcement-content" animation="{{marqueeAnimation}}">
-        <text decode="true">🏆</text> 安平五金竭诚为您服务！专业经营：电工电料、音响设备、电器维修、水电安装、五金批发 | <text decode="true">📍</text> 地址：洪泽区大庆南路民政局对面 | <text decode="true">☎️</text> 电话：13915157035
-      </view>
-    </view>
-  </view>
-  
   <!-- 紧急联系卡片 -->
   <view class="emergency-card">
     <view class="card-title">
